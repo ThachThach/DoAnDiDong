@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/colorbackgroundShimmer"
+    android:orientation="vertical"
+    android:layout_marginBottom="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_linerlayout"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layoutThongTin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/date_24" />
+
+                    <TextView
+                        android:id="@+id/lblThoiGian"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:fontFamily="@font/alike_angular"
+                        android:paddingLeft="7dp"
+                        android:text="20-10-2021 12:30:14"
+                        android:textColor="@color/bac"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/thanhtoan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:fontFamily="@font/alike_angular"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:text="Thanh toán khi nhận"
+                        android:textColor="@color/Python"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/alike_angular"
+                        android:paddingLeft="10dp"
+                        android:text="ID: "
+                        android:textColor="@color/coffee"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_id_donhang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/alike_angular"
+                        android:paddingLeft="10dp"
+                        android:text="12217432849923"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/alike_angular"
+                        android:paddingLeft="10dp"
+                        android:text="Tổng đơn: "
+                        android:textColor="@color/coffee"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/lblDonGia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/alike_angular"
+                        android:paddingLeft="10dp"
+                        android:text="1,000,000,00"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/alike_angular"
+                        android:paddingLeft="10dp"
+                        android:text="Khách hàng: "
+                        android:textColor="@color/coffee"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/lblKhachang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/alike_angular"
+                        android:paddingLeft="10dp"
+                        android:text="Hoàng Hữu Long"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/alike_angular"
+                        android:paddingLeft="10dp"
+                        android:text="ĐC/: "
+                        android:textColor="@color/coffee"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/lblDiaChi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/alike_angular"
+                        android:paddingLeft="10dp"
+                        android:text="116/24/đường 17 - linh trung - thử đức - thành phố hồ chí minh"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1.5"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblXacNhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_kich_hoat"
+                    android:fontFamily="@font/alike_angular"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Xác nhận ✔"
+                    android:textColor="@color/Python"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/lblhuy"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_xoa_van_chuyen"
+                    android:fontFamily="@font/alike_angular"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="Hủy đơn ✘"
+                    android:textColor="@color/red"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

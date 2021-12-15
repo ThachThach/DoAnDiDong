@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:elevation="2dp"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/border_linerlayout"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/thoiGianBatDau"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="8:00 AM"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="đến"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/border_linerlayout"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/thoiGianKetThuc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="8:00 AM"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/monday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/layout_radius50"
+                android:fontFamily="@font/basic"
+                android:gravity="center"
+                android:text="T2"
+                android:textColor="@color/bac"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tuesday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/layout_radius50"
+                android:fontFamily="@font/basic"
+                android:gravity="center"
+                android:text="T3"
+                android:textColor="@color/bac"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/wednesday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/layout_radius50"
+                android:fontFamily="@font/basic"
+                android:gravity="center"
+                android:text="T4"
+                android:textColor="@color/bac"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/thursday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/layout_radius50"
+                android:fontFamily="@font/basic"
+                android:gravity="center"
+                android:text="T5"
+                android:textColor="@color/bac"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/friday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/layout_radius50"
+                android:fontFamily="@font/basic"
+                android:gravity="center"
+                android:text="T6"
+                android:textColor="@color/bac"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/saturday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/layout_radius50"
+                android:fontFamily="@font/basic"
+                android:gravity="center"
+                android:text="T7"
+                android:textColor="@color/bac"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/sunday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/layout_radius50"
+                android:fontFamily="@font/basic"
+                android:gravity="center"
+                android:text="CN"
+                android:textColor="@color/bac"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/background_baocao"
+            android:layout_margin="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_linerlayout"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/link"
+                android:textSize="15sp"
+                android:text="Đóng"/>
+            <TextView
+                android:id="@+id/xacNhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_linerlayout"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/link"
+                android:textSize="15sp"
+                android:text="Xác nhận"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

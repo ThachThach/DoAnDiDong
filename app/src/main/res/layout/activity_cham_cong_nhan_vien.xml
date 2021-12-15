@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:context=".function.Account.ThongTinAccountActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/border_linerlayout"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/imageAvata"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:gravity="center"
+                                android:src="@drawable/iconuser18"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/usernameSmoll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hoàng Hữu Long"
+                        android:textColor="@color/link"
+                        android:textSize="17sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="20dp"
+                    android:background="@color/black1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thời gian làm việc:"
+                        android:textColor="@color/link"
+                        android:textSize="17sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Sáng"
+                            android:textColor="@color/caramel"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="7"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/mondaySang"
+                                style="@style/thoiGianLamViec"
+                                android:text="T2" />
+
+                            <TextView
+                                android:id="@+id/tuesdaySang"
+                                style="@style/thoiGianLamViec"
+                                android:text="T3" />
+
+                            <TextView
+                                android:id="@+id/wednesdaySang"
+                                style="@style/thoiGianLamViec"
+                                android:text="T4" />
+
+                            <TextView
+                                android:id="@+id/thursdaySang"
+                                style="@style/thoiGianLamViec"
+                                android:text="T5" />
+
+                            <TextView
+                                android:id="@+id/fridaySang"
+                                style="@style/thoiGianLamViec"
+                                android:text="T6" />
+
+                            <TextView
+                                android:id="@+id/saturdaySang"
+                                style="@style/thoiGianLamViec"
+                                android:text="T7" />
+
+                            <TextView
+                                android:id="@+id/sundaySang"
+                                style="@style/thoiGianLamViec"
+                                android:text="CN" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Chiều"
+                            android:textColor="@color/caramel"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="7"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/mondayChieu"
+                                style="@style/thoiGianLamViec"
+                                android:text="T2" />
+
+                            <TextView
+                                android:id="@+id/tuesdayChieu"
+                                style="@style/thoiGianLamViec"
+                                android:text="T3" />
+
+                            <TextView
+                                android:id="@+id/wednesdayChieu"
+                                style="@style/thoiGianLamViec"
+                                android:text="T4" />
+
+                            <TextView
+                                android:id="@+id/thursdayChieu"
+                                style="@style/thoiGianLamViec"
+                                android:text="T5" />
+
+                            <TextView
+                                android:id="@+id/fridayChieu"
+                                style="@style/thoiGianLamViec"
+                                android:text="T6" />
+
+                            <TextView
+                                android:id="@+id/saturdayChieu"
+                                style="@style/thoiGianLamViec"
+                                android:text="T7" />
+
+                            <TextView
+                                android:id="@+id/sundayChieu"
+                                style="@style/thoiGianLamViec"
+                                android:text="CN" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Tối"
+                            android:textColor="@color/caramel"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="7"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/mondayToi"
+                                style="@style/thoiGianLamViec"
+                                android:text="T2" />
+
+                            <TextView
+                                android:id="@+id/tuesdayToi"
+                                style="@style/thoiGianLamViec"
+                                android:text="T3" />
+
+                            <TextView
+                                android:id="@+id/wednesdayToi"
+                                style="@style/thoiGianLamViec"
+                                android:text="T4" />
+
+                            <TextView
+                                android:id="@+id/thursdayToi"
+                                style="@style/thoiGianLamViec"
+                                android:text="T5" />
+
+                            <TextView
+                                android:id="@+id/fridayToi"
+                                style="@style/thoiGianLamViec"
+                                android:text="T6" />
+
+                            <TextView
+                                android:id="@+id/saturdayToi"
+                                style="@style/thoiGianLamViec"
+                                android:text="T7" />
+
+                            <TextView
+                                android:id="@+id/sundayToi"
+                                style="@style/thoiGianLamViec"
+                                android:text="CN" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/black1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cham"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_linerlayout"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="Chấm" />
+
+                    <TextView
+                        android:id="@+id/nghi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_linerlayout"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="Nghỉ" />
+
+                    <TextView
+                        android:id="@+id/tangca"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_linerlayout"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="Tăng ca" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/black1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_weight="2"
+                        android:text="Tổng ca làm" />
+
+                    <TextView
+                        android:id="@+id/tv_tongca"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0" />
+                    <TextView
+                        android:id="@+id/tv_add_calam"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/red"
+                         />
+                    <TextView
+                        android:id="@+id/tru_tongCaLam"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        style="@style/thoiGianLamViec"
+                        android:text="-"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/red"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_weight="2"
+                        android:text="Tổng ca nghỉ" />
+
+                    <TextView
+                        android:id="@+id/tv_tong_canghi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0" />
+                    <TextView
+                        android:id="@+id/tv_add_canghi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/red" />
+                    <TextView
+                        android:id="@+id/tru_tongCaNghi"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        style="@style/thoiGianLamViec"
+                        android:text="-"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/red"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_weight="2"
+                        android:text="Tổng tăng ca" />
+
+                    <TextView
+                        android:id="@+id/tv_tongtangca"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0" />
+
+                    <TextView
+                        android:id="@+id/tv_add_tangca"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/red" />
+                    <TextView
+                        android:id="@+id/tru_tongTangCa"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        style="@style/thoiGianLamViec"
+                        android:text="-"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/red"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="20dp"
+                    android:background="@color/black1" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp">
+
+                        <ProgressBar
+                            android:id="@+id/progressBarLamMoi"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            style="?android:attr/progressBarStyleLarge"
+                            android:indeterminateDrawable="@drawable/progressbar"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_lammoi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border_linerlayout"
+                            android:backgroundTint="@color/link"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:text="Làm mới"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/progressBarLamMoi"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/progressBarLamMoi"
+                            app:layout_constraintVertical_bias="0.444" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp">
+
+                        <ProgressBar
+                            android:id="@+id/progressBarLuu"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            style="?android:attr/progressBarStyleLarge"
+                            android:indeterminateDrawable="@drawable/progressbar"
+                            app:layout_constraintBottom_toBottomOf="@+id/tv_luu"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_luu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border_linerlayout"
+                            android:backgroundTint="@color/link"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:text="Lưu"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+

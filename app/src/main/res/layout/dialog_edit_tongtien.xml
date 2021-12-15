@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_16"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/themDVT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/xanh"
+        android:textStyle="bold|italic|normal"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:background="@drawable/bg_titel_16"
+        android:text="Chỉnh sửa tổng tiền"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/edt_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/bac"
+            android:inputType="number"
+            android:background="@drawable/bg_white_edittext"
+            android:padding="12dp"></EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+            <Button
+                android:id="@+id/btn_huy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bg_button_10"
+                android:alpha="0.4"
+                android:text="Hủy bỏ"></Button>
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/xanh"
+                android:backgroundTint="@color/vang"
+                android:background="@drawable/bg_button_16"
+                android:text="Thêm"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

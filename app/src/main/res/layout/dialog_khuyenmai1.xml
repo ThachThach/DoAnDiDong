@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_16"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/xanh"
+        android:textStyle="normal|italic|bold"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:background="@drawable/bg_titel_16"
+        android:text="Khuyến mãi loại 1"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/xanh"
+            android:text="Giá để khuyến mãi"></TextView>
+
+        <EditText
+            android:id="@+id/edtGiakhuyenmai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@drawable/bg_white_edittext"
+            android:layout_marginTop="5dp"
+            android:padding="12dp"
+            ></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/xanh"
+            android:text="Phần % khuyến mãi"></TextView>
+
+        <EditText
+            android:id="@+id/edtphantramkhuyenmai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/link"
+            android:background="@drawable/bg_white_edittext"
+            android:layout_marginTop="5dp"
+            android:padding="12dp"
+            ></EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+            <Button
+                android:id="@+id/btnhuyDiaLogThemKM1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bg_button_10"
+                android:alpha="0.4"
+                android:text="Hủy bỏ"></Button>
+            <Button
+                android:id="@+id/btnthemDiaLogThemKM1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:backgroundTint="@color/vang"
+                android:textColor="@color/xanh"
+                android:background="@drawable/bg_button_16"
+                android:text="Thêm"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

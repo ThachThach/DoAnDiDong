@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_16"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/xanh"
+        android:textStyle="bold|normal|italic"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:background="@drawable/bg_titel_16"
+        android:text="Cập nhật số liệu"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="Đơn vị quy đổi"></TextView>
+
+        <EditText
+            android:id="@+id/textSanPham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_edittext"
+            android:layout_marginTop="5dp"
+            android:padding="12dp"
+            android:enabled="false"
+            android:inputType="text"
+            ></EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="Số Liệu Cũ"></TextView>
+
+        <EditText
+            android:id="@+id/textSoLieuCu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_edittext"
+            android:layout_marginTop="5dp"
+            android:padding="12dp"
+            android:enabled="false"
+            android:inputType="number"
+            ></EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="Số Liệu Mới"></TextView>
+        <EditText
+            android:id="@+id/textsoLieuMoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_edittext"
+            android:layout_marginTop="5dp"
+            android:padding="12dp"
+            android:inputType="number"
+            ></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_button_10"
+            android:alpha="0.4"
+            android:text="Hủy bỏ"
+            android:id="@+id/thoat"></Button>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:backgroundTint="@color/vang"
+            android:textColor="@color/xanh"
+            android:background="@drawable/bg_button_16"
+            android:text="Thêm"
+            android:id="@+id/addChiTietKho"></Button>
+    </LinearLayout>
+
+</LinearLayout>

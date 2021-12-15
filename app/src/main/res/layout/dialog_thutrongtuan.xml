@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_16"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/xanh"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textStyle="italic|normal|bold"
+        android:background="@drawable/bg_titel_16"
+        android:text="Chọn Ngày Làm"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_textview_16"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:text="T2"></TextView>
+
+        <TextView
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_textview_16"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:text="T3"></TextView>
+        <TextView
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_textview_16"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:text="T4"></TextView>
+        <TextView
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_textview_16"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:text="T5"></TextView>
+        <TextView
+            android:id="@+id/checkBox6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_textview_16"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:text="T6"></TextView>
+        <TextView
+            android:id="@+id/checkBox7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_textview_16"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:text="T7"></TextView>
+
+        <TextView
+            android:id="@+id/checkBox8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_textview_16"
+            android:padding="10dp"
+            android:text="CN"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:padding="16dp">
+        <Button
+            android:id="@+id/btnhuyDiaLogNgay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_button_10"
+            android:alpha="0.4"
+            android:text="Hủy bỏ"></Button>
+
+        <Button
+            android:id="@+id/btnthemDiaLogNgay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_16"
+            android:text="Thêm"
+            android:textColor="@color/xanh"
+            android:backgroundTint="@color/vang"
+            android:textSize="16sp"></Button>
+    </LinearLayout>
+
+
+</LinearLayout>

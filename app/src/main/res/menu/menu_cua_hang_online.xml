@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:title="Kênh bán hàng">
+    <menu>
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/cuahang"
+                android:icon="@drawable/storefront_24"
+                android:title="Cửa hàng trực tuyến" />
+            <item
+                android:id="@+id/sanpham"
+                android:icon="@drawable/fastfood_24"
+                android:title="Mặt hàng" />
+            <item
+                android:id="@+id/quangcao"
+                android:icon="@drawable/category_24"
+                android:title="Quảng cáo sản phẩm" />
+            <item
+                android:id="@+id/khuyenmai"
+                android:icon="@drawable/sale_24"
+                android:title="Khuyến mãi" />
+
+        </group>
+    </menu>
+</item>
+
+
+<item android:title="Thiết lập">
+    <menu>
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/thongtin"
+                android:icon="@drawable/storefront_24"
+                android:title="Thông tin của hàng" />
+            <item
+                android:id="@+id/giolamviec"
+                android:icon="@drawable/date_24"
+                android:title="Giờ làm việc" />
+            <item
+                android:id="@+id/vanchuyen"
+                android:icon="@drawable/shipping_24"
+                android:title="Cấu hình vận chuyển" />
+        </group>
+    </menu>
+</item>
+
+</menu>

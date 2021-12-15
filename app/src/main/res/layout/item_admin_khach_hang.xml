@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_linerlayout_v2"
+    android:backgroundTint="@color/xanh_nhe"
+    android:layout_margin="10dp"
+    android:paddingLeft="5dp">
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID: "
+        android:textSize="20dp"
+        android:fontFamily="@font/alike"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_id_cua_hang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="17dp"
+        android:textStyle="normal|italic|bold"
+        android:textColor="@color/CPP"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/textView27"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cửa hàng: "
+        android:textSize="20dp"
+        android:fontFamily="@font/alike"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/tv_ten_cua_hang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cà phê Trung Nguyên"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        android:textStyle="normal|italic|bold"
+        android:textColor="@color/xanh"
+        app:layout_constraintStart_toEndOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id_cua_hang" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại: "
+        android:textSize="20dp"
+        android:fontFamily="@font/alike"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/tv_so_dien_thoai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0981986059"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/xanh"
+        android:textSize="20dp"
+        android:textStyle="normal|italic|bold"
+        app:layout_constraintStart_toEndOf="@+id/textView31"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ten_cua_hang" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/link"
+        app:layout_constraintTop_toBottomOf="@+id/tv_so_dien_thoai"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <TextView
+        android:id="@+id/btn_huy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_button_ca"
+        android:fontFamily="@font/alike_angular"
+        android:padding="6dp"
+        android:text="Khóa"
+        android:textColor="@color/CPP"
+        android:textSize="20sp"
+        android:textStyle="italic|normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_so_dien_thoai" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

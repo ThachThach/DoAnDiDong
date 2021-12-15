@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_16"
+    android:layout_margin="40dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_titel_16"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Menu Chức năng"
+        android:textColor="@color/xanh"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"></TextView>
+    <TextView
+        android:id="@+id/tvdatban"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/xanh"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="Đặt bàn"></TextView>
+
+
+    <TextView
+        android:id="@+id/listdatban"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/xanh"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="Danh sách đặt Trước"></TextView>
+    <TextView
+        android:id="@+id/hoantac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/xanh"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="Hoàn Tác"></TextView>
+
+
+
+
+</LinearLayout>

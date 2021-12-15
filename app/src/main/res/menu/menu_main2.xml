@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/order"
+        android:icon="@drawable/icons8card"
+        android:title="Menu 1"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/bacham"
+        android:icon="@drawable/icons8bacham"
+        android:title="Chọn khuyến mãi"
+        android:orderInCategory="200"
+        app:showAsAction="withText"
+        />
+</menu>

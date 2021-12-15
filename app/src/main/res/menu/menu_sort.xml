@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/tuanNay_moinhat"
+        android:orderInCategory="100"
+        android:title="Tuần này"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/tuy_chinh"
+        android:orderInCategory="100"
+        android:title="Tùy chỉnh"
+        app:showAsAction="withText" />
+</menu>

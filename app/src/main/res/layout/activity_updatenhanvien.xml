@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="10">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:layout_weight="9">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="Họ và tên"></TextView>
+
+            <EditText
+                android:id="@+id/edtTenNhanVienUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_edittext"
+                android:hint="Nhập tên nhân viên"
+                android:padding="12dp"></EditText>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:text="Số điện thoại"></TextView>
+            <EditText
+                android:id="@+id/edtPhoneUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_edittext"
+                android:hint="Nhập số điện thoại"
+                android:padding="12dp"></EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="50dp"
+                android:text="Ca làm"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/checkCaSangUpdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="10sp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:drawableLeft="@drawable/icons8plus"
+                    android:background="@drawable/bg_button_ca"
+                    android:text="Ca Sáng"></Button>
+
+                <Button
+                    android:id="@+id/checkCaChieuUpdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="10sp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:drawableLeft="@drawable/icons8plus"
+                    android:background="@drawable/bg_button_ca"
+                    android:text="Ca Trưa"></Button>
+
+                <Button
+                    android:id="@+id/checkCaToiUpdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="10sp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:drawableLeft="@drawable/icons8plus"
+                    android:background="@drawable/bg_button_ca"
+                    android:text="Ca Tối"></Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    android:text="Công việc"></TextView>
+                <CheckBox
+                    android:layout_marginTop="10dp"
+
+                    android:id="@+id/checkcongviecQuanlysanphamUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:text="@string/quanlynhanvien" />
+                <CheckBox
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/checkcongviecQuanlynhanvienUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:text="@string/quanlysanpham" />
+
+                <CheckBox
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/checkcongviecThuchiUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:text="@string/thuchi" />
+
+                <CheckBox
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/checkcongviecOderUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/oder" />
+
+                <CheckBox
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/checkcongviecBepUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:text="@string/bep" />
+                <CheckBox
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/checkquanlycuahangonline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:text="@string/cuahangonline"
+                    />
+                <CheckBox
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/checkkhachhang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:text="@string/khachhang"
+                    />
+                <CheckBox
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/checkkhuyenmai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:text="@string/khuyenmai"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="5dp">
+        <Button
+            android:id="@+id/btnhuyThayDoi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_button_10"
+            android:alpha="0.4"
+            android:text="Hủy bỏ"></Button>
+        <Button
+            android:id="@+id/btnThayDoiNhanVien"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:background="@drawable/bg_button_16"
+            android:text="Cập nhật"></Button>
+    </LinearLayout>
+</LinearLayout>

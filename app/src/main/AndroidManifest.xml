@@ -9,15 +9,331 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DoAnDiDong">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+        <activity android:name=".function.Account.IntroductoryActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".function.LichSuHoatDongActivity"
+            android:exported="true"
+            android:label="Lịch sử hoạt động"
+            android:parentActivityName=".function.MainActivity"
+            android:theme="@style/thameActionbar" />
+        <activity
+            android:name=".function.CuaHangOnline.DanhSachSanPhamActivity"
+            android:exported="true"
+            android:label="Danh sách sản phẩm"
+            android:parentActivityName=".function.CuaHangOnline.TaoSanPhamOnlineActivity"
+            android:theme="@style/thameActionbar4" />
+        <activity
+            android:name=".function.SanPham.DanhSachNguyenLieuActivity"
+            android:exported="true"
+            android:label="Danh sách nguyên liệu" />
+        <activity
+            android:name=".function.BaoCao.DanhSachChiTieuActivity"
+            android:exported="true"
+            android:label="" />
+        <activity
+            android:name=".function.ChiTieuActivity"
+            android:exported="true"
+            android:label="Chi tiêu" />
+        <activity
+            android:name=".function.Account.TaoChiNhanhActivity"
+            android:exported="true" />
+        <activity
+            android:name=".function.Account.ChiNhanhActivity"
+            android:exported="true" />
+        <activity
+            android:name=".function.BienLaiActivity"
+            android:exported="true" />
+        <activity
+            android:name=".function.NhanVien.ChamCongNhanVienActivity"
+            android:exported="true"
+            android:label="Chấm công nhân viên"
+            android:parentActivityName=".function.NhanVien.ListNhanVien"
+            android:theme="@style/thameActionbar" />
+        <activity
+            android:name=".function.ThietLapActivity"
+            android:exported="true"
+            android:label="Tiện ích"
+            android:parentActivityName=".function.MainActivity"
+            android:theme="@style/thameActionbar4" />
+        <activity
+            android:name=".function.Account.ThongTinAccountActivity"
+            android:exported="true"
+            android:label=""
+            android:parentActivityName=".function.ThietLapActivity"
+            android:theme="@style/thameActionbar2" />
+        <activity
+            android:name=".function.ThanhToanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".function.SanPham.ListProduct"
+            android:exported="true" />
+        <activity
+            android:name=".function.SanPham.SuaSanPhamActivity"
+            android:exported="true" />
+        <activity android:name=".function.SanPham.AddCategory" />
+        <activity android:name=".function.SanPham.AddProduct" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".function.CardProductSQL.CardProduct"
+            android:exported="true" />
+        <activity
+            android:name=".function.ChiTietOrder.ChiTietSanPham"
+            android:exported="true" />
+        <activity
+            android:name=".function.MonOrder"
+            android:exported="true" />
+        <activity android:name=".function.Manager" />
+        <activity android:name=".function.Income" />
+        <activity android:name=".function.Processing" />
+        <activity android:name=".function.OrderMenu" />
+        <activity android:name=".function.MainActivity" /> <!-- Sign in, SignUp -->
+        <activity
+            android:name=".function.Account.StoreSetting"
+            android:exported="true" />
+        <activity
+            android:name=".function.Account.SignInActivity"
+            android:exported="true" />
+        <activity
+            android:name=".function.Account.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".function.Account.ForgotPasswordActivity"
+            android:exported="true" /> <!-- Báo cáo -->
+        <activity
+            android:name=".function.BaoCao.DanhSachBienLaiActivity"
+            android:exported="true"
+            android:label="Danh sách biên lai"
+            android:theme="@style/thameActionbar2" />
+        <activity
+            android:name=".function.BaoCao.BaoCaoSanPhamActivity"
+            android:exported="true"
+            android:label="Báo cáo sản phẩm"
+            android:parentActivityName=".function.BaoCao.BaoCaoTongQuanActivity"
+            android:theme="@style/thameActionbar2" />
+        <activity
+            android:name=".function.BaoCao.BaoCaoTongQuanActivity"
+            android:exported="true"
+            android:label="Tổng quan"
+            android:parentActivityName=".function.Account.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/thameActionbar2" />
+        <activity
+            android:name=".function.BaoCao.ChiTietNhapKhoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".function.BaoCao.BaoCaoKhoActivity"
+            android:screenOrientation="portrait" /> <!-- Đơn online -->
+        <activity
+            android:name=".function.DonHangOnline.DuyetDonHangActivity"
+            android:label="Đơn hàng online"
+            android:parentActivityName=".function.MainActivity"
+            android:theme="@style/thameActionbar2" />
+        <activity
+            android:name=".function.BaoCao.BaoCaoChiSoActivity"
+            android:label="Chỉ số"
+            android:parentActivityName=".function.BaoCao.BaoCaoTongQuanActivity"
+            android:theme="@style/thameActionbar2" /> <!-- Bếp -->
+        <activity
+            android:name=".function.BepBar.BepActivity"
+            android:label="Bếp"
+            android:parentActivityName=".function.MainActivity"
+            android:theme="@style/thameActionbar3" />
+        <activity
+            android:name=".function.BepBar.DangXuLyActivity"
+            android:exported="true"
+            android:parentActivityName=".function.BepBar.BepActivity"
+            android:theme="@style/thameActionbar3" />
+        <activity
+            android:name=".function.BepBar.DangXuLyOnlineActivity"
+            android:exported="true"
+            android:parentActivityName=".function.BepBar.BepActivity"
+            android:theme="@style/thameActionbar3" />
+        <activity
+            android:name=".function.CuaHangOnline.CuaHangOnlineActivity"
+            android:exported="true"
+            android:label=""
+            android:parentActivityName=".function.MainActivity"
+            android:theme="@style/thameActionbar4" />
+        <activity
+            android:name=".function.CuaHangOnline.ThongTinCuaHangOnlineActivity"
+            android:exported="true"
+            android:label=""
+            android:parentActivityName=".function.MainActivity"
+            android:theme="@style/thameActionbar4" />
+        <activity
+            android:name=".function.CuaHangOnline.CauHinhVanChuyenOnlineActivity"
+            android:exported="true"
+            android:label=""
+            android:parentActivityName=".function.MainActivity"
+            android:theme="@style/thameActionbar4" />
+        <activity
+            android:name=".function.CuaHangOnline.QuangCaoActivity"
+            android:exported="true"
+            android:label=""
+            android:parentActivityName=".function.MainActivity"
+            android:theme="@style/thameActionbar4" />
+        <activity
+            android:name=".function.CuaHangOnline.TaoSanPhamOnlineActivity"
+            android:exported="true"
+            android:label=""
+            android:parentActivityName=".function.MainActivity"
+            android:theme="@style/thameActionbar4" />
+        <activity
+            android:name=".function.CuaHangOnline.ThoiGianLamViecOnlineActivity"
+            android:exported="true"
+            android:label=""
+            android:parentActivityName=".function.MainActivity"
+            android:theme="@style/thameActionbar4" />
+        <activity
+            android:name=".function.NhanVien.ListNhanVien"
+            android:exported="true"
+            android:label="Danh sách nhân viên"
+            android:parentActivityName=".function.MainActivity"
+            android:theme="@style/thameActionbar5" />
+        <activity
+            android:name=".function.NhanVien.AddNhanVien"
+            android:exported="true"
+            android:label="Thêm nhân viên"
+            android:parentActivityName=".function.NhanVien.ListNhanVien"
+            android:theme="@style/thameActionbar5" />
+        <activity
+            android:name=".function.KhachHang.ThemKhachHang"
+            android:exported="true"
+            android:label="Thêm khách hàng"
+            android:parentActivityName=".function.KhachHang.ListKhachHang"
+            android:theme="@style/thameActionbar5" />
+        <activity
+            android:name=".function.NhanVien.ActivityUpdateNhanVien"
+            android:exported="true"
+            android:label="Thay đổi thông tin nhân viên"
+            android:parentActivityName=".function.KhachHang.ListKhachHang"
+            android:theme="@style/thameActionbar5" />
+        <activity
+            android:name=".function.KhachHang.ThemNhomKhachHang"
+            android:exported="true"
+            android:label="Thêm nhóm khách hàng"
+            android:parentActivityName=".function.KhachHang.ListNhomKhachHang"
+            android:theme="@style/thameActionbar5" />
+        <activity
+            android:name=".function.KhachHang.ListKhachHang"
+            android:exported="true"
+            android:label="Danh sách khách hàng"
+            android:parentActivityName=".function.MainActivity"
+            android:theme="@style/thameActionbar5" />
+        <activity
+            android:name=".function.KhachHang.SuaKhachHang"
+            android:exported="true"
+            android:label="Thay đổi khách hàng"
+            android:parentActivityName=".function.KhachHang.ListKhachHang"
+            android:theme="@style/thameActionbar5" />
+        <activity
+            android:name=".function.KhachHang.ListNhomKhachHang"
+            android:exported="true"
+            android:label="Danh sách khách hàng"
+            android:parentActivityName=".function.MainActivity"
+            android:theme="@style/thameActionbar5" />
+        <activity
+            android:name=".function.KhachHang.SuaNhomKhachHang"
+            android:exported="true"
+            android:label="Danh sách nhóm khách hàng"
+            android:parentActivityName=".function.KhachHang.ListNhomKhachHang"
+            android:theme="@style/thameActionbar5" />
+        <activity
+            android:name=".function.KhuyenMai.ThemKhuyenMai"
+            android:exported="true"
+            android:label=""
+            android:parentActivityName=".function.KhuyenMai.ListKhuyenMai"
+            android:theme="@style/thameActionbar6" />
+        <activity
+            android:name=".function.KhuyenMai.ListKhuyenMai"
+            android:exported="true"
+            android:label=""
+            android:parentActivityName=".function.MainActivity"
+            android:theme="@style/thameActionbar6" />
+        <activity
+            android:name=".function.SanPham.ListCategory"
+            android:exported="true"
+            android:label="Danh sách nhóm sản phẩm"
+            android:parentActivityName=".function.MainActivity"
+            android:theme="@style/thameActionbar5" />
+        <activity
+            android:name=".function.Account.OnboardingScreenActivity"
+            android:enabled="true" />
+        <activity android:name=".function.Error" />
+
+        <activity
+            android:name=".function.Account.ChiNhanhSignInActivity"
+            android:enabled="true" />
+        <activity
+            android:name=".function.TachBanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".function.DatBan.DatBan"
+            android:exported="false" />
+        <activity
+            android:name=".function.DatBan.DanhSachDatBan"
+            android:exported="false" />
+        <activity
+            android:name=".function.BaoCao.CapNhatBaoCaoActivity"
+            android:enabled="true"
+            android:label="Cập nhật nguyên liệu"
+            android:parentActivityName=".function.ThietLapActivity"
+            android:theme="@style/thameActionbar" />
+        <activity
+            android:name=".function.SanPham.ThemNguyenLieuActivity"
+            android:enabled="true"
+            android:parentActivityName=".function.SanPham.DanhSachNguyenLieuActivity"
+            android:theme="@style/thameActionbar" />
+        <activity
+            android:name=".function.BaoCao.ChiTietThuChiActivity"
+            android:enabled="true"
+            android:label="Chi tiêu"
+            android:parentActivityName=".function.BaoCao.BaoCaoTongQuanActivity"
+            android:theme="@style/thameActionbar" />
+        <activity android:name=".function.KhuyenMaiOffLine.KhuyenMaiOff" />
+        <activity android:name=".function.KhuyenMaiOffLine.KhuyenMaiThanhToan" />
+        <activity
+            android:name=".function.ThemBan_KhuVuc.ListBan"
+            android:exported="false" />
+        <activity
+            android:name=".function.ThemBan_KhuVuc.ListKhuVuc"
+            android:exported="false" />
+        <activity
+            android:name=".function.ThemBan_KhuVuc.SuaBanKV"
+            android:exported="false" />
+        <activity
+            android:name=".function.ThemBan_KhuVuc.SuaKhuVuc"
+            android:exported="false" />
+        <activity
+            android:name=".function.ThemBan_KhuVuc.ThemBan"
+            android:exported="false" />
+        <activity
+            android:name=".function.ThemBan_KhuVuc.ThemKhuVuc"
+            android:exported="false" />
+        <activity
+            android:name=".function.KhuyenMaiOffLine.ListChonKhuyenMaiOff"
+            android:exported="false" />
+        <activity
+            android:name=".function.KhuyenMaiOffLine.ListKhuyeMaiOff"
+            android:exported="false" />
+        <activity
+            android:name=".function.SanPham.ListDonViTinh"
+            android:exported="false" />
+
+        <activity
+            android:name=".function.DatBan.XacNhanDatBan"
+            android:exported="false" />
+
     </application>
 
 </manifest>

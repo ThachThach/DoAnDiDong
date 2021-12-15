@@ -7,4 +7,66 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="vang">#FFEB3B</color>
+    <color name="den_nhat">#666666</color>
+    <color name="hong_nhat">#FBEFEF</color>
+    <color name="red">#cf1e31</color>
+    <color name="xanh">#11AEA9</color>
+
+    <color name="black1">#CCCCCC</color>
+    <color name="bar">#11AEA9</color>
+    <color name="background_baocao">#f0f4f6</color>
+    <color name="btn_gio">#EE97C4DA</color>
+    <color name="link">#EE2F708F</color>
+    <color name="colorbackgroundShimmer">#fff</color>
+    <color name="colorShimmer">#E4E2E2</color>
+    <color name="bac">#859494</color>
+    <color name="maudat">#f6cd61</color>
+    <color name="color_google">#dc473a</color>
+
+    <color name="colorPrimary">#024265</color>
+    <color name="colorPrimaryDark">#024265</color>
+    <color name="xacnhan">#56B85B</color>
+    <color name="color_one">#fb7268</color>
+    <color name="color_white">#ededf2</color>
+    <color name="color_two">#E3E0E0</color>
+    <color name="xanh_nhe">#ecf4f5</color>
+    <color name="Python">#66BB6A</color>
+    <color name="CPP">#EF5350</color>
+    <color name="Java">#29B6F6</color>
+    <color name="so_hoa_don">#a8b328</color>
+    <color name="doanh_so">#e1ed3c</color>
+    <color name="doanh_thu">#818dfc</color>
+    <color name="chi_phi">#b4b469</color>
+
+    <color name="trangthai">#7fffd4</color>
+
+    <color name="strawberry">#CB0000</color>
+    <color name="lemon_lime">#E4EA8C</color>
+    <color name="plants">#5C821A</color>
+    <color name="new_grownth">#C6D166</color>
+    <color name="peacock_blue">#1E656D</color>
+    <color name="ivory">#F1F3CE</color>
+
+    <color name="coffee">#B38867</color>
+    <color name="ceramic">#CDCDCD</color>
+    <color name="slate">#626D71</color>
+    <color name="latte">#DDBC95</color>
+
+    <color name="tangerine">#F69454</color>
+    <color name="carrot">#EE693F</color>
+    <color name="pearg_reean">#739F3D</color>
+    
+    <color name="blue_berry">#075271</color>
+    <color name="periwinkle">#053d54</color>
+    
+    <color name="caramel">#C9A66B</color>
+    <color name="cream">#EBDCB2</color>
+    <color name="bep">#CDF5FF8D</color>
+    
+    <color name="linen">#EAE2D6</color>
+    <color name="brown_soc">#623a38</color>
+    <color name="delete">#7CFF5A52</color>
+
 </resources>

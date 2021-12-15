@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawable_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".function.CuaHangOnline.TaoSanPhamOnlineActivity">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:animateLayoutChanges="true"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/menu_cua_hang_online" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:background="@color/white"
+            android:elevation="1dp"
+            app:navigationIcon="@drawable/menu_24"
+            app:title="Sản phẩm cửa hàng"
+            app:titleTextColor="@color/colorPrimaryDark" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:alpha="0.2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:elevation="2dp"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/btnQuangCaoSanPham"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_weight="5"
+                                android:text="Tạo sản phẩm"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/btnChonSanPham"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/border_linerlayout"
+                                android:backgroundTint="@color/new_grownth"
+                                android:fontFamily="@font/basic"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="7dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="7dp"
+                                android:text="+ Chọn sản phẩm từ cửa hàng"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/quangCaoSanPham"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="30dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="20dp"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="2dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:background="@color/background_baocao" />
+
+                                    <LinearLayout
+                                        android:id="@+id/layout_taomoi"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/lblLoai"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="20dp"
+                                            android:text="+ Tạo mới"
+                                            android:textSize="20sp" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:layout_marginBottom="20dp"
+                                            android:orientation="vertical">
+
+                                            <com.google.android.material.textfield.TextInputLayout
+                                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="10dp"
+                                                android:hint="Tên sản phẩm *"
+                                                app:hintEnabled="true">
+
+                                                <com.google.android.material.textfield.TextInputEditText
+                                                    android:id="@+id/tenSanPham"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:inputType="text"
+                                                    android:textColor="@color/slate"
+                                                    app:boxStrokeColor="@color/vang">
+
+                                                </com.google.android.material.textfield.TextInputEditText>
+
+                                            </com.google.android.material.textfield.TextInputLayout>
+
+                                            <com.google.android.material.textfield.TextInputLayout
+                                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="20dp"
+                                                android:hint="Số lượng *"
+                                                app:hintEnabled="true">
+
+                                                <com.google.android.material.textfield.TextInputEditText
+                                                    android:id="@+id/soLuong"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:inputType="number"
+                                                    android:textColor="@color/slate"
+                                                    app:boxStrokeColor="@color/vang">
+
+                                                </com.google.android.material.textfield.TextInputEditText>
+
+                                            </com.google.android.material.textfield.TextInputLayout>
+
+                                            <com.google.android.material.textfield.TextInputLayout
+                                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="20dp"
+                                                android:hint="Mô tả ngắn"
+                                                app:hintEnabled="true">
+
+                                                <com.google.android.material.textfield.TextInputEditText
+                                                    android:id="@+id/title"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="left|top"
+                                                    android:inputType="textMultiLine"
+                                                    android:lines="2"
+                                                    android:textColor="@color/slate"
+                                                    app:boxStrokeColor="@color/vang">
+
+                                                </com.google.android.material.textfield.TextInputEditText>
+                                            </com.google.android.material.textfield.TextInputLayout>
+
+                                            <com.google.android.material.textfield.TextInputLayout
+                                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="20dp"
+                                                android:hint="Mô tả "
+                                                app:hintEnabled="true">
+
+                                                <com.google.android.material.textfield.TextInputEditText
+                                                    android:id="@+id/mota"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="left|top"
+                                                    android:inputType="textMultiLine"
+                                                    android:lines="6"
+                                                    android:textColor="@color/slate"
+                                                    app:boxStrokeColor="@color/vang">
+
+                                                </com.google.android.material.textfield.TextInputEditText>
+                                            </com.google.android.material.textfield.TextInputLayout>
+
+                                            <com.google.android.material.textfield.TextInputLayout
+                                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="20dp"
+                                                android:hint="Nhóm sản phẩm">
+
+                                                <AutoCompleteTextView
+                                                    android:id="@+id/nhomsanpham"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:focusable="false"
+                                                    android:inputType="none"
+                                                    android:textColor="@color/slate" />
+
+                                            </com.google.android.material.textfield.TextInputLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="20dp"
+                                                android:gravity="center"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/addDonViTinh"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginRight="30dp"
+                                                    android:background="@drawable/border_linerlayout"
+                                                    android:backgroundTint="@color/ivory"
+                                                    android:padding="10dp"
+                                                    android:text="+ Thêm đơn vị tính" />
+
+                                                <TextView
+                                                    android:id="@+id/addLoai"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginRight="30dp"
+                                                    android:background="@drawable/border_linerlayout"
+                                                    android:backgroundTint="@color/ivory"
+                                                    android:padding="10dp"
+                                                    android:text="+ Đơn vị tính" />
+                                            </LinearLayout>
+
+                                            <androidx.recyclerview.widget.RecyclerView
+                                                android:id="@+id/donViTinh"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="20dp"
+                                                android:layout_weight="1"
+                                                android:background="@drawable/border_linerlayout" />
+
+                                            <com.google.android.material.textfield.TextInputLayout
+                                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="20dp"
+                                                android:hint="Giảm giá *"
+                                                app:hintEnabled="true">
+
+                                                <com.google.android.material.textfield.TextInputEditText
+                                                    android:id="@+id/giamGia"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:inputType="number"
+                                                    android:textColor="@color/slate"
+                                                    app:boxStrokeColor="@color/vang">
+
+                                                </com.google.android.material.textfield.TextInputEditText>
+
+                                            </com.google.android.material.textfield.TextInputLayout>
+
+                                            <LinearLayout
+                                                android:id="@+id/addImage"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="200dp"
+                                                android:layout_marginTop="20dp"
+                                                android:background="@drawable/border_image_dashed"
+                                                android:orientation="vertical">
+
+                                                <LinearLayout
+                                                    android:id="@+id/layout_image"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="1dp">
+
+                                                    <ImageView
+                                                        android:id="@+id/imgageView"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:src="@drawable/alternate_24" />
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:id="@+id/layout_image1"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="50dp"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <ImageView
+                                                        android:layout_width="50dp"
+                                                        android:layout_height="50dp"
+                                                        android:src="@drawable/alternate_24" />
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Tải ảnh lên" />
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="right">
+
+                                        <androidx.constraintlayout.widget.ConstraintLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:id="@+id/taoDon"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/bg_xoa_van_chuyen"
+                                                android:backgroundTint="@color/caramel"
+                                                android:paddingLeft="20dp"
+                                                android:paddingTop="7dp"
+                                                android:paddingRight="20dp"
+                                                android:paddingBottom="7dp"
+                                                android:text="+ Tạo sản"
+                                                android:textColor="@color/white"
+                                                app:layout_constraintBottom_toBottomOf="parent"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toTopOf="parent" />
+
+                                            <ProgressBar
+                                                android:id="@+id/progressBar"
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                app:layout_constraintBottom_toBottomOf="parent"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toTopOf="parent" />
+                                        </androidx.constraintlayout.widget.ConstraintLayout>
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </ScrollView>
+
+            <ProgressBar
+                android:id="@+id/progressBarlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

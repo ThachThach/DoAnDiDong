@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_weight="10">
+
+
+    <TextView
+        android:layout_weight="0.1"
+        android:id="@+id/textThem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/themsanpham"
+        android:textSize="17sp"
+        android:fontFamily="@font/baloo"
+        android:textColor="@color/black" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textThem">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <androidx.cardview.widget.CardView
+                    style="@style/cardview_themsanpham">
+                    <EditText
+                        android:id="@+id/textTensanpham"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/tensanpham"
+                        android:background="#00000000"
+                        android:padding="10dp"></EditText>
+                    <View
+                        style="@style/view" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/cardview_themsanpham">
+                    <EditText
+                        android:id="@+id/textChitietsanpham"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/chitietsanpham"
+                        android:background="#00000000"
+                        android:padding="10dp"></EditText>
+                    <View
+                        style="@style/view" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/cardview_nhomsanpham">
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_weight="0.75"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="@string/nhomsanpham"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/baloo"
+                            android:textColor="@color/black"
+                            android:gravity="center"></TextView>
+
+                        <Spinner
+                            android:id="@+id/spnNhomsanpham"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/teal_200" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/cardview_themsanpham">
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/textGianhap"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/gianhapsanpham"
+                        android:background="#00000000"
+                        android:padding="10dp"></EditText>
+                    <View
+                        style="@style/view" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/cardview_themsanpham">
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/textSoluong"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/soluongsanpham"
+                        android:background="#00000000"
+                        android:padding="10dp"></EditText>
+                    <View
+                        style="@style/view" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/image">
+                    <ImageView
+                        android:id="@+id/imgChoose"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></ImageView>
+                </androidx.cardview.widget.CardView>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/btnChoose"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/icons8image"></ImageView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/cardview_nhomsanpham">
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/themDonViTinh"
+                            android:layout_weight="0.75"
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:text="Thêm đơn vị tính"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/baloo"
+                            android:textColor="@color/black"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:drawableLeft="@drawable/icons8plus"></Button>
+                        <Button
+                            android:id="@+id/DonViTinhSanPham"
+                            android:layout_weight="0.75"
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:text="Đơn vị sản phẩm"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/baloo"
+                            android:textColor="@color/black"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:drawableLeft="@drawable/icons8plus"></Button>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/teal_200" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:orientation="horizontal">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/listGiaSanPham"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10">
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <Button
+            android:id="@+id/btnhuyAddProduct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_button_10"
+            android:alpha="0.4"
+            android:text="Hủy bỏ"></Button>
+        <Button
+            android:id="@+id/btnAddproduct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:background="@drawable/bg_button_16"
+            android:text="Thêm"></Button>
+    </LinearLayout>
+
+
+</LinearLayout>

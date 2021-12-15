@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ramotion.foldingcell:folding-cell:1.2.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d2246ab53998b9cfcecdd6a939b4ea41/transformed/jetified-folding-cell-1.2.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d2246ab53998b9cfcecdd6a939b4ea41/transformed/jetified-folding-cell-1.2.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d2246ab53998b9cfcecdd6a939b4ea41/transformed/jetified-folding-cell-1.2.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_16"
+    android:layout_margin="40dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_titel_16"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Chức năng Thanh Toán"
+        android:textColor="@color/xanh"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"></TextView>
+
+    <TextView
+        android:id="@+id/tvgopban"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/xanh"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="Gộp Bàn"></TextView>
+
+    <TextView
+        android:id="@+id/tvchuyenban"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/xanh"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="Chuyển Bàn "></TextView>
+    <TextView
+        android:id="@+id/tvtachban"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/xanh"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="Tách Bàn "></TextView>
+    <TextView
+        android:id="@+id/tvhuydon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/xanh"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="Hủy Thanh Toán"></TextView>
+    <TextView
+        android:id="@+id/thoat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/xanh"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="Đóng"></TextView>
+
+
+
+
+</LinearLayout>

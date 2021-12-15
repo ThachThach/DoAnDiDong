@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".function.ChiTietOrder.ChiTietSanPham">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/edt_ghichu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbars"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:id="@+id/cardView1"-->
+        <!--            android:layout_width="200dp"-->
+        <!--            android:layout_height="130dp"-->
+
+        <!--            app:cardElevation="8dp"-->
+        <!--            app:cardMaxElevation="8dp"-->
+        <!--            tools:layout_editor_absoluteX="206dp"-->
+        <!--            tools:layout_editor_absoluteY="328dp">-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:background="@drawable/cardviewsp1"-->
+        <!--                android:orientation="vertical">-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/textView11"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="40dp"-->
+        <!--                    android:fontFamily="@font/baloo"-->
+        <!--                    android:gravity="center"-->
+        <!--                    android:text="Tổng Tiền"-->
+        <!--                    android:textSize="20sp" />-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/tvtonggiasanpham"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="70dp"-->
+        <!--                    android:background="@drawable/border"-->
+        <!--                    android:gravity="center"-->
+        <!--                    android:text="30.000"-->
+        <!--                    android:textSize="24sp"-->
+        <!--                    android:textStyle="bold" />-->
+        <!--            </LinearLayout>-->
+
+        <!--        </androidx.cardview.widget.CardView>-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="10dp"
+            app:cardElevation="8dp"
+            app:cardMaxElevation="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tableRow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/borderghichu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/xanh"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center"
+                    android:text="Đơn Vị Tính"
+                    android:textSize="16sp" />
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/tvloaisanpham"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="70dp"-->
+                <!--                    android:background="@drawable/border"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:text="Lon"-->
+                <!--                    android:textSize="24sp"-->
+                <!--                    android:textStyle="bold" />-->
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/border"
+                    android:scrollbars="none">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </ScrollView>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvtensanpham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Trà Sữa"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvgiasanpham"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content" />-->
+
+        <TextView
+            android:id="@+id/tvgiasanpham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="182dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="182dp"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="15.000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvtensanpham" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="221dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginEnd="95dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvgiasanpham">
+
+            <ImageView
+                android:id="@+id/imgproduct"
+                android:layout_width="221dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                app:cardCornerRadius="50dp"
+
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="62dp" />
+        </androidx.cardview.widget.CardView>
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="131dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+            <ImageView
+                android:id="@+id/bnt_minus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icons8minus" />
+
+            <TextView
+                android:id="@+id/tvsoluong"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/bnt_plus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icons8plus" />
+        </TableRow>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow"
+        android:elevation="20dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bnt_xacnhan"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="150dp"
+
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/triple"
+        android:fontFamily="@font/baloo"
+        android:text="Xác Nhận"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bnt_huy" />
+
+    <Button
+        android:id="@+id/bnt_huy"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/triple"
+        android:fontFamily="@font/baloo"
+        android:text="Hủy"
+        android:textSize="24sp"
+
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_ghichu"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/borderghichu"
+        android:ems="20"
+        android:gravity="top|left"
+        android:hint="nhập ghi chú"
+        android:inputType="textMultiLine|text"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="22.5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/bnt_xacnhan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="Total:"
+            android:textColor="#373b54"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvtonggiasanpham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="$10.00000000"
+            android:textColor="#373b54"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,111 @@
 <resources>
-    <string name="app_name">DoAnDiDong</string>
+    <string name="app_name">FoodApp</string>
+    <string name="facebook_app_id">248728940107368</string>
+    <string name="fb_login_protocol_scheme">fb248728940107368</string>
+
+    <string name="navigation_drawer_open">Open Navigation drawer</string>
+    <string name="navigation_drawer_close">Close Navigation drawer</string>
+
+
+    <string name="text123">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</string>
+
+    <!--Báo cáo-->
+    <string name="tinh_hinh_tai_chinh">Tình hình tài chính</string>
+    <string name="toc_do_tang_truong">Tốc độ tăng trưởng >></string>
+    <string name="tong_tien">Tổng tiền</string>
+    <string name="no_phai_thu">Nợ phải thu</string>
+    <string name="no_phai_tra">Nợ phải trả</string>
+    <string name="tong_quan">Tổng quan</string>
+    <string name="doanh_thu">Doanh thu</string>
+    <string name="hoa_don">Hóa đơn</string>
+    <string name="doanh_so">Doanh số</string>
+    <string name="chua_thanh_toan">Chưa thanh toán</string>
+    <string name="da_thanh_toan">Đã thanh toán</string>
+    <string name="hoa_don_dich_vu">Hóa đơn dịch vụ - phụ thu</string>
+    <string name="hoa_don_co_mon_huy">Hóa đơn có món hủy</string>
+    <string name="hoa_don_online">Hóa đơn online</string>
+    <string name="so_luong">Số lượng: </string>
+    <string name="so_0">0</string>
+    <string name="chi_nhanh">Chi nhánh</string>
+    <string name="chon_ngay">Chọn ngày</string>
+    <string name="hoa_don_bi_huy">Hóa đơn bị hủy</string>
+
+
+    <!--    Thach-->
+    <string name="themsanpham">Thêm sản phẩm</string>
+    <string name="tensanpham">Tên sản phẩm</string>
+    <string name="chitietsanpham">Chi tiết sản phẩm</string>
+    <string name="giabansanpham">Giá bán sản phẩm</string>
+    <string name="gianhapsanpham">Giá nhập sản phẩm</string>
+    <string name="soluongsanpham">Số lượng sản phẩm</string>
+    <string name="chose">Chose</string>
+    <string name="btnthemsanpham">Thêm sản phẩm mới</string>
+    <string name="nhomsanpham">Nhóm sản phẩm</string>
+    <string name="tennhanvien">Tên nhân viên</string>
+    <string name="sodienthoai">Số điện thoại</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="catoi">Ca tối </string>
+    <string name="casang">Ca sáng </string>
+    <string name="catrua">Ca chiều </string>
+    <string name="quanlynhanvien">Quản lý nhân viên</string>
+    <string name="bep">Bếp</string>
+    <string name="quanlysanpham">Quản lý sản phẩm</string>
+    <string name="thuchi">Thu chi</string>
+    <string name="oder">Oder</string>
+    <string name="cuahangonline">Quản lý cửa hàng online</string>
+    <string name="khachhang">Khách hàng</string>
+    <string name="khuyenmai">Khuyến mãi</string>
+    <string name="chi_phi">Chi phí</string>
+
+    <!--    Login and signup-->
+    <string name="signIpNow">Đăng ký một tài khoản để bắt đầu</string>
+    <string name="signUpGoodle">Sign up with Google</string>
+    <string name="wellcom">Welcome</string>
+    <string name="Username">Tên người dùng</string>
+    <string name="nameStore">Name of the store</string>
+    <string name="phone">Số điện thoại</string>
+    <string name="signup">Đăng ký</string>
+    <string name="already_accund">Đã có tài khoản? Đăng nhập ngay</string>
+    <string name="signin_continue">Đăng nhập để bắt đầu</string>
+    <string name="forget_password">Quên mật khẩu?</string>
+    <string name="forget_password2">Forgot password</string>
+    <string name="signin">Đăng nhập</string>
+    <string name="noAccount">Chưa có tài khoản? Đăng ký ngay</string>
+    <string name="signInGoogle">Sign in with Google</string>
+    <string name="enter_email">Enter correct email to recover password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="confirm_password">Nhập lại Password</string>
+
+    <!--  Setting store activity  -->
+    <string name="setupStore">Thiết lập cửa hàng</string>
+    <string name="name_store">Tên cửa hàng *</string>
+    <string name="select_item_spinner">Tỉnh/ Thành phố *</string>
+    <string name="select_item_spinner2">Quận/ huyện *</string>
+    <string name="select_item_spinner3">Phường/ xã *</string>
+    <string name="complete">Hoàn thành</string>
+
+    <string name="Choose_a_branch">Chọn chi nhánh</string>
+    <string name="start">Bắt đầu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_onbarding_mota">@string/app_name</string>
+    <string name="noidung_onbarding_mota">Cung cấp dịch vụ tiện ích cho mọi cửa hàng: quán ăn, nước giải khát, caffee,...</string>
+    <string name="title_onbarding_quanli">Bán hàng dễ dàng</string>
+    <string name="noidung_onbarding_quanli">Food app cung cấp tiện ích oder với giao diện dễ dàng thao tác, theo dõi biểu đồ các khu vực một cách chuẩn xác</string>
+
+    <string-array name="sort_product">
+        <item>Số lượng giảm</item>
+        <item>Số lượng tăng</item>
+        <item>Tiền thu giảm</item>
+        <item>Tiền thu tăng</item>
+    </string-array>
+
+    <string-array name="sort_bienlai">
+        <item>Tất cả</item>
+        <item>Cửa hàng</item>
+        <item>Online</item>
+    </string-array>
+
 </resources>

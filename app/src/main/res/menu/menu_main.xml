@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_homes"
+            android:icon="@drawable/img_home_menu"
+            android:title="Home" />
+    </group>
+
+    <item android:title="Tùy chọn">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/lichsu"
+                    android:icon="@drawable/order_menu"
+                    android:title="Lịch sử hoạt động" />
+                <item
+                    android:id="@+id/bep"
+                    android:icon="@drawable/chef"
+                    android:title="Bếp" />
+                <item
+                    android:id="@+id/oder"
+                    android:icon="@drawable/management"
+                    android:title="oder " />
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="Tài khoản">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/profile"
+                    android:icon="@drawable/user"
+                    android:title="Tài khoản" />
+                <item
+                    android:id="@+id/logout"
+                    android:icon="@drawable/logout"
+                    android:title="Đăng xuất" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
