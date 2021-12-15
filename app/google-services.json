@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "25692641806",
+    "project_id": "doandidong-c8c37",
+    "storage_bucket": "doandidong-c8c37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25692641806:android:352d808b50a98080fcba5f",
+        "android_client_info": {
+          "package_name": "com.example.doandidong"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25692641806-28na71n1fu5ui640dgpce71iqe9kur4p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_1RwMuhL71hb9oYa6_4HcvLgI0Nlyg-M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "25692641806-28na71n1fu5ui640dgpce71iqe9kur4p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
