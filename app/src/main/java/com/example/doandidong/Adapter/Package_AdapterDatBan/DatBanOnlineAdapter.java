@@ -20,9 +20,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import com.example.doandidong.Common.ThongTinCuaHangSql;
-import com.example.doandidong.Model.DatBan.DatBanModel;
+import com.example.doandidong.Data.DatBan.DatBanModel;
 import com.example.doandidong.R;
-import com.example.doandidong.function.DatBan.XacNhanDatBan;
+import com.example.doandidong.ChucNang.DatBan.XacNhanDatBan;
 import java.util.ArrayList;
 
 public class DatBanOnlineAdapter extends RecyclerView.Adapter<DatBanOnlineAdapter.DatBanholder> {

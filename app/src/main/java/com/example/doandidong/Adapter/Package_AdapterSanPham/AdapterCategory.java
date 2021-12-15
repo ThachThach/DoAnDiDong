@@ -11,9 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import com.example.doandidong.Model.SanPham.Category;
+import com.example.doandidong.Data.SanPham.Category;
 import com.example.doandidong.R;
-import com.example.doandidong.function.SanPham.ListCategory;
+import com.example.doandidong.ChucNang.SanPham.ListCategory;
 import java.util.ArrayList;
 
 public class AdapterCategory extends RecyclerView.Adapter<AdapterCategory.CategoryAdater> {

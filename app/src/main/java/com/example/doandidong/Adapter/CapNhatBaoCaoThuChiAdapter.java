@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.doandidong.Model.ThuChi;
+import com.example.doandidong.Data.ThuChi;
 import com.example.doandidong.R;
 import java.util.List;
 

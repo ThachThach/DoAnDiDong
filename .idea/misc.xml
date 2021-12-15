@@ -3,8 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/LECHIDUC/app/src/main/res/drawable-hdpi/shadow.xml" value="0.3828125" />
         <entry key="..\:/LECHIDUC/app/src/main/res/drawable/shadow.xml" value="0.25416666666666665" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/acivity_dailongtu.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_addcategory.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_addkhachhang.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_addnhanvien.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_bao_cao_chi_so.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_bao_cao_kho.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_bao_cao_san_pham.xml" value="0.36666666666666664" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_bao_cao_thu_chi.xml" value="0.23802083333333332" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_bao_cao_tong_quan.xml" value="0.3453125" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_bep.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_bien_lai.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_card_san_pham.xml" value="0.36666666666666664" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_cau_hinh_van_chuyen_online.xml" value="0.23802083333333332" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_error.xml" value="0.1" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_introductory.xml" value="0.17447916666666666" />

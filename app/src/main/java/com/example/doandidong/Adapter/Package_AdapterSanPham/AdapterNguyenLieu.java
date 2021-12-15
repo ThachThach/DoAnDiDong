@@ -11,9 +11,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.doandidong.Model.NguyenLieu;
+import com.example.doandidong.Data.NguyenLieu;
 import com.example.doandidong.R;
-import com.example.doandidong.function.SanPham.DanhSachNguyenLieuActivity;
+import com.example.doandidong.ChucNang.SanPham.DanhSachNguyenLieuActivity;
 import java.util.ArrayList;
 
 public class AdapterNguyenLieu extends RecyclerView.Adapter<AdapterNguyenLieu.NguyenLieuHolder> {

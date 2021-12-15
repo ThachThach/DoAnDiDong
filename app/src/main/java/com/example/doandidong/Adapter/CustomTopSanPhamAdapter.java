@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.doandidong.Model.SanPhamTop;
+import com.example.doandidong.Data.SanPhamTop;
 import com.example.doandidong.R;
 import java.util.List;
 

@@ -1,7 +1,7 @@
 package com.example.doandidong.Common;
 
-import com.example.doandidong.function.DonHangOnline.data.DonHang;
-import com.example.doandidong.function.DonHangOnline.data.SanPham;
+import com.example.doandidong.ChucNang.DonHangOnline.data.DonHang;
+import com.example.doandidong.ChucNang.DonHangOnline.data.SanPham;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;

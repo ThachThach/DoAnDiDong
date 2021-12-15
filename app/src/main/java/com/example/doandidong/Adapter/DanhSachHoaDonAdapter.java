@@ -13,8 +13,8 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.doandidong.R;
-import com.example.doandidong.function.BaoCao.model.BienLai;
-import com.example.doandidong.function.BienLaiActivity;
+import com.example.doandidong.ChucNang.BaoCao.model.BienLai;
+import com.example.doandidong.ChucNang.BienLaiActivity;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

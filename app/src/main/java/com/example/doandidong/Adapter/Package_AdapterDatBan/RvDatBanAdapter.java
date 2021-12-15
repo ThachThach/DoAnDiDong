@@ -25,9 +25,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import com.example.doandidong.Common.ThongTinCuaHangSql;
-import com.example.doandidong.Model.DatBan.ID_datban;
+import com.example.doandidong.Data.DatBan.ID_datban;
 import com.example.doandidong.R;
-import com.example.doandidong.function.DatBan.DanhSachDatBan;
+import com.example.doandidong.ChucNang.DatBan.DanhSachDatBan;
 import java.util.ArrayList;
 
 public class RvDatBanAdapter extends RecyclerView.Adapter<RvDatBanAdapter.DatBanholder> {

@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.ramotion.foldingcell.FoldingCell;
 import com.squareup.picasso.Picasso;
 
-import com.example.doandidong.Model.ChucNangThanhToan.ProuductPushFB1;
+import com.example.doandidong.Data.ChucNangThanhToan.ProuductPushFB1;
 import com.example.doandidong.R;
 import java.util.ArrayList;
 

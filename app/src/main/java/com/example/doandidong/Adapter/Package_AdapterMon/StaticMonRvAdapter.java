@@ -16,10 +16,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.squareup.picasso.Picasso;
 
 import com.example.doandidong.Adapter.Pakage_AdapterDanhMuc_Mon.StaticCategoryMonModel;
-import com.example.doandidong.function.ChiTietOrder.ChiTietSanPham;
-import com.example.doandidong.Model.Product;
+import com.example.doandidong.ChucNang.ChiTietOrder.ChiTietSanPham;
+import com.example.doandidong.Data.Product;
 import com.example.doandidong.R;
-import com.example.doandidong.function.MonOrder;
+import com.example.doandidong.ChucNang.MonOrder;
 import java.util.ArrayList;
 
 public class StaticMonRvAdapter  extends RecyclerView.Adapter<StaticMonRvAdapter.StaticMonRvViewHolder>{

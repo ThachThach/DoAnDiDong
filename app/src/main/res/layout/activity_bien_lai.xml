@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/den_nhat"
-    tools:context=".function.BienLaiActivity">
+    tools:context=".ChucNang.BienLaiActivity">
 
     <ScrollView
         android:layout_width="match_parent"

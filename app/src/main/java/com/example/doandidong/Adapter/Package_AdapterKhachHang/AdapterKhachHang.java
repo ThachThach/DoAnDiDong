@@ -11,10 +11,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.doandidong.Model.KhachHang.KhachHang;
+import com.example.doandidong.Data.KhachHang.KhachHang;
 import com.example.doandidong.R;
-import com.example.doandidong.function.KhachHang.ListKhachHang;
-import com.example.doandidong.function.KhachHang.SuaKhachHang;
+import com.example.doandidong.ChucNang.KhachHang.ListKhachHang;
+import com.example.doandidong.ChucNang.KhachHang.SuaKhachHang;
 import java.util.ArrayList;
 
 

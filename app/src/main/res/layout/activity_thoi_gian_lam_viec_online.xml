@@ -9,7 +9,7 @@
     android:elevation="10dp"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context=".function.CuaHangOnline.ThoiGianLamViecOnlineActivity"
+    tools:context=".ChucNang.CuaHangOnline.ThoiGianLamViecOnlineActivity"
     tools:openDrawer="end">
 
     <com.google.android.material.navigation.NavigationView

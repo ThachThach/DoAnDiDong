@@ -12,8 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.doandidong.R;
-import com.example.doandidong.function.ThemBan_KhuVuc.ListKhuVuc;
-import com.example.doandidong.function.ThemBan_KhuVuc.SuaKhuVuc;
+import com.example.doandidong.ChucNang.ThemBan_KhuVuc.ListKhuVuc;
+import com.example.doandidong.ChucNang.ThemBan_KhuVuc.SuaKhuVuc;
 import java.util.ArrayList;
 
 public class KhuVucAdapter extends RecyclerView.Adapter<KhuVucAdapter.KhuVucViewHolder> {

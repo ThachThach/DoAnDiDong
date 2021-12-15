@@ -1,7 +1,6 @@
 package com.example.doandidong.Common;
 
-import com.example.doandidong.Model.ChucNangThanhToan.ProductPushFB;
-import com.example.doandidong.Model.ChucNangThanhToan.ProuductPushFB1;
+import com.example.doandidong.Data.ChucNangThanhToan.ProuductPushFB1;
 import java.util.ArrayList;
 
 public interface ArrayListTachBan {

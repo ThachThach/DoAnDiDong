@@ -6,9 +6,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.example.doandidong.Model.Address;
-import com.example.doandidong.Model.AddressVN.DiaChi;
-import com.example.doandidong.Model.AddressVN.Huyen;
+import com.example.doandidong.Data.AddressVN.DiaChi;
+import com.example.doandidong.Data.AddressVN.Huyen;
 import com.example.doandidong.R;
 import java.io.BufferedReader;
 import java.io.IOException;

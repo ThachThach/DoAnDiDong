@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.doandidong.Model.PieTongQuan;
+import com.example.doandidong.Data.PieTongQuan;
 import com.example.doandidong.R;
 import java.util.List;
 

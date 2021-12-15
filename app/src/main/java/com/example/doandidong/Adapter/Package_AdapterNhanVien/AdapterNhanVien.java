@@ -15,11 +15,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.squareup.picasso.Picasso;
 
 import com.example.doandidong.Common.ThongTinCuaHangSql;
-import com.example.doandidong.Model.NhanVien_CaLam.NhanVien;
+import com.example.doandidong.Data.NhanVien_CaLam.NhanVien;
 import com.example.doandidong.R;
-import com.example.doandidong.function.NhanVien.ActivityUpdateNhanVien;
-import com.example.doandidong.function.NhanVien.ChamCongNhanVienActivity;
-import com.example.doandidong.function.NhanVien.ListNhanVien;
+import com.example.doandidong.ChucNang.NhanVien.ActivityUpdateNhanVien;
+import com.example.doandidong.ChucNang.NhanVien.ChamCongNhanVienActivity;
+import com.example.doandidong.ChucNang.NhanVien.ListNhanVien;
 import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;

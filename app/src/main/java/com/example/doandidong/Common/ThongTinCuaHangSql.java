@@ -3,7 +3,7 @@ package com.example.doandidong.Common;
 import android.content.Context;
 import android.database.Cursor;
 
-import com.example.doandidong.Model.NhanVien_CaLam.NhanVien;
+import com.example.doandidong.Data.NhanVien_CaLam.NhanVien;
 import java.util.ArrayList;
 
 public class ThongTinCuaHangSql {
@@ -15,8 +15,8 @@ public class ThongTinCuaHangSql {
     }
 
     public String IDCuaHang() {
-        com.example.doandidong.database.ThongTinCuaHangSql thongTinCuaHangSql =
-                new com.example.doandidong.database.
+        com.example.doandidong.SQL.ThongTinCuaHangSql thongTinCuaHangSql =
+                new com.example.doandidong.SQL.
                         ThongTinCuaHangSql(context, "app_database.sqlite", null, 2);
         thongTinCuaHangSql.createTable();
         Cursor cursor = thongTinCuaHangSql.selectThongTin();
@@ -34,7 +34,7 @@ public class ThongTinCuaHangSql {
     }
 
     public String IDUser() {
-        com.example.doandidong.database.ThongTinCuaHangSql thongTinCuaHangSql = new com.example.doandidong.database.ThongTinCuaHangSql(context, "app_database.sqlite", null, 2);
+        com.example.doandidong.SQL.ThongTinCuaHangSql thongTinCuaHangSql = new com.example.doandidong.SQL.ThongTinCuaHangSql(context, "app_database.sqlite", null, 2);
         thongTinCuaHangSql.createTableUser();
         Cursor cursor = thongTinCuaHangSql.selectUser();
         String id = "";
@@ -51,7 +51,7 @@ public class ThongTinCuaHangSql {
     }
 
     public String Username() {
-        com.example.doandidong.database.ThongTinCuaHangSql thongTinCuaHangSql = new com.example.doandidong.database.ThongTinCuaHangSql(context, "app_database.sqlite", null, 2);
+        com.example.doandidong.SQL.ThongTinCuaHangSql thongTinCuaHangSql = new com.example.doandidong.SQL.ThongTinCuaHangSql(context, "app_database.sqlite", null, 2);
         thongTinCuaHangSql.createTableUser();
         Cursor cursor = thongTinCuaHangSql.selectUser();
         String username = "";
@@ -69,7 +69,7 @@ public class ThongTinCuaHangSql {
 
     public NhanVien selectUser() {
         NhanVien nhanVien = new NhanVien();
-        com.example.doandidong.database.ThongTinCuaHangSql thongTinCuaHangSql = new com.example.doandidong.database.ThongTinCuaHangSql(context, "app_database.sqlite", null, 2);
+        com.example.doandidong.SQL.ThongTinCuaHangSql thongTinCuaHangSql = new com.example.doandidong.SQL.ThongTinCuaHangSql(context, "app_database.sqlite", null, 2);
         thongTinCuaHangSql.createTableUser();
         Cursor cursor = thongTinCuaHangSql.selectUser();
         if (cursor.getCount() > 0) {
@@ -91,7 +91,7 @@ public class ThongTinCuaHangSql {
     }
 
     public boolean isChu() {
-        com.example.doandidong.database.ThongTinCuaHangSql thongTinCuaHangSql = new com.example.doandidong.database.ThongTinCuaHangSql(context, "app_database.sqlite", null, 2);
+        com.example.doandidong.SQL.ThongTinCuaHangSql thongTinCuaHangSql = new com.example.doandidong.SQL.ThongTinCuaHangSql(context, "app_database.sqlite", null, 2);
         thongTinCuaHangSql.createTableChuCuaHang();
         Cursor cursor = thongTinCuaHangSql.selectChuCuaHang();
         String check = "";

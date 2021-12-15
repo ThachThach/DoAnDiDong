@@ -11,9 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.doandidong.Model.KhuyenMaiOffModel;
+import com.example.doandidong.Data.KhuyenMaiOffModel;
 import com.example.doandidong.R;
-import com.example.doandidong.function.KhuyenMaiOffLine.KhuyenMaiThanhToan;
+import com.example.doandidong.ChucNang.KhuyenMaiOffLine.KhuyenMaiThanhToan;
 import java.util.ArrayList;
 
 public class AdapterChonKmInKmThanhToan extends RecyclerView.Adapter<AdapterChonKmInKmThanhToan.ChonKmInKmThanhToan> {

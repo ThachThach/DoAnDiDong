@@ -8,7 +8,7 @@
     android:elevation="10dp"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context=".function.CuaHangOnline.CuaHangOnlineActivity"
+    tools:context=".ChucNang.CuaHangOnline.CuaHangOnlineActivity"
     tools:openDrawer="end">
 
     <com.google.android.material.navigation.NavigationView

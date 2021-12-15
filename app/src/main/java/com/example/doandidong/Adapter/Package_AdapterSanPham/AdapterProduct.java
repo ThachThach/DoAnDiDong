@@ -14,10 +14,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.squareup.picasso.Picasso;
 
 
-import com.example.doandidong.Model.Product;
+import com.example.doandidong.Data.Product;
 import com.example.doandidong.R;
-import com.example.doandidong.function.SanPham.ListProduct;
-import com.example.doandidong.function.SanPham.SuaSanPhamActivity;
+import com.example.doandidong.ChucNang.SanPham.ListProduct;
+import com.example.doandidong.ChucNang.SanPham.SuaSanPhamActivity;
 import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;

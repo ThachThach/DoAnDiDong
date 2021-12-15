@@ -10,9 +10,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.doandidong.Model.KhuyenMaiOffModel;
+import com.example.doandidong.Data.KhuyenMaiOffModel;
 import com.example.doandidong.R;
-import com.example.doandidong.function.KhuyenMaiOffLine.KhuyenMaiOff;
+import com.example.doandidong.ChucNang.KhuyenMaiOffLine.KhuyenMaiOff;
 import java.util.ArrayList;
 
 public class AdapterDanhSachKhuyenMai extends RecyclerView.Adapter<AdapterDanhSachKhuyenMai.danhsachkhuyenmai> {

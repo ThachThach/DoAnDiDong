@@ -1,12 +1,10 @@
 package com.example.doandidong.Common;
 
-import android.app.Activity;
 import android.content.Context;
-import android.util.Log;
 
 import com.google.firebase.database.FirebaseDatabase;
 
-import com.example.doandidong.Model.LichSuHoatDong;
+import com.example.doandidong.Data.LichSuHoatDong;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Date;

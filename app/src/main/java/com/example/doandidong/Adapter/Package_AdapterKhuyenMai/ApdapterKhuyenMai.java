@@ -10,9 +10,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.doandidong.Model.KhuyenMai.KhuyenMai;
+import com.example.doandidong.Data.KhuyenMai.KhuyenMai;
 import com.example.doandidong.R;
-import com.example.doandidong.function.KhuyenMai.ListKhuyenMai;
+import com.example.doandidong.ChucNang.KhuyenMai.ListKhuyenMai;
 import java.util.ArrayList;
 
 

@@ -1,6 +1,6 @@
 package com.example.doandidong.Common;
 
-import com.example.doandidong.Model.Product;
+import com.example.doandidong.Data.Product;
 import java.util.ArrayList;
 
 public interface Interface_CategorySp_Sp {

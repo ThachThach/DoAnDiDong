@@ -5,7 +5,7 @@
     android:id="@+id/dsSanPhamFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".function.BaoCao.fragment.DanhSachTopSanPhamFragment">
+    tools:context=".ChucNang.BaoCao.fragment.DanhSachTopSanPhamFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView

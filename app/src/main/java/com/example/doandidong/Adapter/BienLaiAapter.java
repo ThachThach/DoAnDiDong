@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.doandidong.R;
-import com.example.doandidong.function.BaoCao.model.SanPham;
+import com.example.doandidong.ChucNang.BaoCao.model.SanPham;
 import java.util.ArrayList;
 
 public class BienLaiAapter extends RecyclerView.Adapter<BienLaiAapter.BienLaiHodel>{

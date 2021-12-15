@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.doandidong.Model.ChucNangThanhToan.DonGia;
+import com.example.doandidong.Data.ChucNangThanhToan.DonGia;
 import com.example.doandidong.R;
 import java.util.ArrayList;
 

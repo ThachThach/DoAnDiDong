@@ -12,9 +12,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.doandidong.Common.ArrayListTachBan;
-import com.example.doandidong.Model.ChucNangThanhToan.ProductPushFB;
+import com.example.doandidong.Data.ChucNangThanhToan.ProductPushFB;
 import com.example.doandidong.R;
-import com.example.doandidong.function.TachBanActivity;
+import com.example.doandidong.ChucNang.TachBanActivity;
 import java.util.ArrayList;
 
 public class AdapterTachBan extends RecyclerView.Adapter<AdapterTachBan.TachBanHodel> {

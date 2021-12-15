@@ -7,16 +7,18 @@
     android:id="@+id/drawable_layout"
     android:background="#FFFFFF"
     android:elevation="10dp"
-    tools:context=".function.MainActivity"
+    tools:context=".ChucNang.MainActivity"
     android:fitsSystemWindows="true"
     tools:openDrawer="start"
     android:orientation="vertical"
     >
+
+
+
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:id="@+id/nav_view"
-        app:headerLayout="@layout/header_menu"
         app:menu="@menu/menu_main"
         android:layout_gravity="start"
         />
@@ -37,62 +39,30 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="10dp"
                 android:animateLayoutChanges="true"
-                android:background="@drawable/shadow"
+                android:background="@color/verypari"
                 android:elevation="20dp"
 
                 android:minHeight="?attr/actionBarSize"
                 android:theme="?attr/actionBarTheme"
-                app:layout_constraintBottom_toTopOf="@+id/imglogo"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:navigationIcon="@drawable/icons8menu" />
+                app:navigationIcon="@drawable/menu_24" />
 
-            <TextView
-                android:id="@+id/textlogo"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="32dp"
-                android:fontFamily="@font/baloo"
-                android:gravity="center"
-                android:text="Coffe Houses"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@+id/imglogo"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toolbar" />
-
-
-            <ImageView
-                android:id="@+id/imglogo"
-                android:layout_width="140dp"
-                android:layout_height="140dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="10dp"
-                android:elevation="10dp"
-                android:scrollbarSize="40dp"
-                app:layout_constraintBottom_toTopOf="@+id/linear1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.636"
-                app:layout_constraintStart_toEndOf="@+id/textlogo"
-                app:layout_constraintTop_toBottomOf="@+id/toolbar"
-                app:srcCompat="@drawable/coffeeshop" />
 
             <LinearLayout
                 android:id="@+id/linear1"
                 android:layout_width="0dp"
                 android:layout_height="165dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"
                 android:orientation="horizontal"
-                app:layout_constraintBottom_toTopOf="@+id/Line1a"
+                app:layout_constraintBottom_toTopOf="@+id/linear11"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imglogo">
+                app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
@@ -110,7 +80,7 @@
                         android:id="@+id/orderbutton"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/xanh">
+                        android:background="@color/verypari">
 
                         <TextView
                             android:id="@+id/tvorder"
@@ -135,6 +105,20 @@
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear11"
+                android:layout_width="0dp"
+                android:layout_height="165dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear1">
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -154,7 +138,7 @@
                         android:id="@+id/bep"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/xanh">
+                        android:background="@color/verypari">
 
                         <TextView
                             android:id="@+id/textchebien"
@@ -192,7 +176,7 @@
                 android:paddingTop="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linear1">
+                app:layout_constraintTop_toBottomOf="@+id/linear11">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
@@ -210,7 +194,7 @@
                         android:id="@+id/baocao"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/xanh">
+                        android:background="@color/verypari">
 
                         <TextView
                             android:id="@+id/tvthuchi"
@@ -235,6 +219,21 @@
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="165dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Line1a"
+                android:layout_marginBottom="30dp">
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -251,115 +250,10 @@
                     app:cardUseCompatPadding="false">
 
                     <RelativeLayout
-                        android:id="@+id/online"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/xanh">
-
-                        <TextView
-                            android:id="@+id/tvquanly"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/imgquanly"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/alike_angular"
-                            android:gravity="center"
-                            android:text="Thiết lập online"
-                            android:textColor="@color/hong_nhat"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:id="@+id/imgquanly"
-                            android:layout_width="75dp"
-                            android:layout_height="75dp"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="15dp"
-                            app:srcCompat="@drawable/quanly" />
-                    </RelativeLayout>
-
-                </androidx.cardview.widget.CardView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/Line2"
-                android:layout_width="0dp"
-                android:layout_height="165dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:orientation="horizontal"
-                android:paddingTop="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.842"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Line1a"
-                app:layout_constraintVertical_bias="0.118">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:elevation="8dp"
-                    app:cardBackgroundColor="#FFFFFF"
-                    app:cardElevation="8dp"
-                    app:cardMaxElevation="8dp">
-
-                    <RelativeLayout
-                        android:id="@+id/donOnline"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/xanh">
-
-                        <TextView
-                            android:id="@+id/tvdsmon"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/imgdsmon"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/alike_angular"
-                            android:gravity="center"
-                            android:text="Đơn hàng online "
-                            android:textColor="@color/hong_nhat"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:id="@+id/imgdsmon"
-                            android:layout_width="75dp"
-                            android:layout_height="75dp"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="15dp"
-                            app:srcCompat="@drawable/icons8onlineshop100" />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:elevation="8dp"
-                    app:cardBackgroundColor="#FFFFFF"
-                    app:cardCornerRadius="5px"
-                    app:cardElevation="8dp"
-                    app:cardMaxElevation="8dp"
-                    app:cardPreventCornerOverlap="true"
-                    app:cardUseCompatPadding="false">
-
-                    <RelativeLayout
                         android:id="@+id/account"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/xanh">
+                        android:background="@color/verypari">
 
                         <TextView
                             android:id="@+id/a"
@@ -387,59 +281,6 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/Line3"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:orientation="horizontal"
-                android:paddingTop="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Line2">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:elevation="8dp"
-                    app:cardBackgroundColor="#FFFFFF"
-                    app:cardElevation="8dp"
-                    app:cardMaxElevation="8dp">
-
-                    <RelativeLayout
-                        android:id="@+id/dondatban"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/xanh">
-
-                        <TextView
-                            android:id="@+id/tvdsmon1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/imgdsmon1"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/alike_angular"
-                            android:gravity="center"
-                            android:text="Đơn đặt bàn online "
-                            android:textColor="@color/hong_nhat"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:id="@+id/imgdsmon1"
-                            android:layout_width="75dp"
-                            android:layout_height="75dp"
-                            android:layout_centerHorizontal="true"
-                            app:srcCompat="@drawable/icons8onlineshop100" />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-            </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.drawerlayout.widget.DrawerLayout>

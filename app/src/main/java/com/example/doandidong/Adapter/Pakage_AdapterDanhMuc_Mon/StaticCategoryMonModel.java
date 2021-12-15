@@ -1,6 +1,6 @@
 package com.example.doandidong.Adapter.Pakage_AdapterDanhMuc_Mon;
 
-import com.example.doandidong.Model.Product;
+import com.example.doandidong.Data.Product;
 import java.util.ArrayList;
 
 public class StaticCategoryMonModel {

@@ -11,9 +11,9 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import com.example.doandidong.Model.KhuyenMaiOffModel;
+import com.example.doandidong.Data.KhuyenMaiOffModel;
 import com.example.doandidong.R;
-import com.example.doandidong.function.KhuyenMaiOffLine.ListChonKhuyenMaiOff;
+import com.example.doandidong.ChucNang.KhuyenMaiOffLine.ListChonKhuyenMaiOff;
 import java.util.ArrayList;
 
 public class AdapterListChonKhuyenMaiOff extends RecyclerView.Adapter<AdapterListChonKhuyenMaiOff.ListChonKhuyeMaiViewHolder> {

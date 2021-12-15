@@ -14,8 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 
 import com.example.doandidong.R;
-import com.example.doandidong.function.ThemBan_KhuVuc.ListBan;
-import com.example.doandidong.function.ThemBan_KhuVuc.SuaBanKV;
+import com.example.doandidong.ChucNang.ThemBan_KhuVuc.ListBan;
+import com.example.doandidong.ChucNang.ThemBan_KhuVuc.SuaBanKV;
 import java.util.ArrayList;
 
 public class AdapterBan extends RecyclerView.Adapter<AdapterBan.BanViewHolder> {

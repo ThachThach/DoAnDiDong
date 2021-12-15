@@ -17,10 +17,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.gson.Gson;
 
 
-import com.example.doandidong.Model.ListKhuyenMaiOffModel;
+import com.example.doandidong.Data.ListKhuyenMaiOffModel;
 import com.example.doandidong.R;
-import com.example.doandidong.function.KhuyenMaiOffLine.ListChonKhuyenMaiOff;
-import com.example.doandidong.function.KhuyenMaiOffLine.ListKhuyeMaiOff;
+import com.example.doandidong.ChucNang.KhuyenMaiOffLine.ListChonKhuyenMaiOff;
+import com.example.doandidong.ChucNang.KhuyenMaiOffLine.ListKhuyeMaiOff;
 import java.util.ArrayList;
 
 public class AdapterListKhuyenMai extends RecyclerView.Adapter<AdapterListKhuyenMai.ListKhuyeMaiViewHolder> {

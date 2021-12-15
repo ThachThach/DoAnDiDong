@@ -12,9 +12,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.doandidong.Model.BaoCaoKho;
+import com.example.doandidong.Data.BaoCaoKho;
 import com.example.doandidong.R;
-import com.example.doandidong.function.BaoCao.ChiTietNhapKhoActivity;
+import com.example.doandidong.ChucNang.BaoCao.ChiTietNhapKhoActivity;
 import java.util.List;
 
 public class QuanLyKhoAdapter extends RecyclerView.Adapter<CustomBaoCaoKho>{

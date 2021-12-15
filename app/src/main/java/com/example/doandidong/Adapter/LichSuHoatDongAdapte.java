@@ -8,7 +8,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.doandidong.Model.LichSuHoatDong;
+import com.example.doandidong.Data.LichSuHoatDong;
 import com.example.doandidong.R;
 import java.util.ArrayList;
 

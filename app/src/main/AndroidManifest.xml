@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DoAnDiDong">
-        <activity android:name=".function.Account.IntroductoryActivity" android:exported="true">
+        <activity android:name=".ChucNang.Account.IntroductoryActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -17,321 +17,321 @@
         </activity>
 
         <activity
-            android:name=".function.LichSuHoatDongActivity"
+            android:name=".ChucNang.LichSuHoatDongActivity"
             android:exported="true"
             android:label="Lịch sử hoạt động"
-            android:parentActivityName=".function.MainActivity"
+            android:parentActivityName=".ChucNang.MainActivity"
             android:theme="@style/thameActionbar" />
         <activity
-            android:name=".function.CuaHangOnline.DanhSachSanPhamActivity"
+            android:name=".ChucNang.CuaHangOnline.DanhSachSanPhamActivity"
             android:exported="true"
             android:label="Danh sách sản phẩm"
-            android:parentActivityName=".function.CuaHangOnline.TaoSanPhamOnlineActivity"
+            android:parentActivityName=".ChucNang.CuaHangOnline.TaoSanPhamOnlineActivity"
             android:theme="@style/thameActionbar4" />
         <activity
-            android:name=".function.SanPham.DanhSachNguyenLieuActivity"
+            android:name=".ChucNang.SanPham.DanhSachNguyenLieuActivity"
             android:exported="true"
             android:label="Danh sách nguyên liệu" />
         <activity
-            android:name=".function.BaoCao.DanhSachChiTieuActivity"
+            android:name=".ChucNang.BaoCao.DanhSachChiTieuActivity"
             android:exported="true"
             android:label="" />
         <activity
-            android:name=".function.ChiTieuActivity"
+            android:name=".ChucNang.ChiTieuActivity"
             android:exported="true"
             android:label="Chi tiêu" />
         <activity
-            android:name=".function.Account.TaoChiNhanhActivity"
+            android:name=".ChucNang.Account.TaoChiNhanhActivity"
             android:exported="true" />
         <activity
-            android:name=".function.Account.ChiNhanhActivity"
+            android:name=".ChucNang.Account.ChiNhanhActivity"
             android:exported="true" />
         <activity
-            android:name=".function.BienLaiActivity"
+            android:name=".ChucNang.BienLaiActivity"
             android:exported="true" />
         <activity
-            android:name=".function.NhanVien.ChamCongNhanVienActivity"
+            android:name=".ChucNang.NhanVien.ChamCongNhanVienActivity"
             android:exported="true"
             android:label="Chấm công nhân viên"
-            android:parentActivityName=".function.NhanVien.ListNhanVien"
+            android:parentActivityName=".ChucNang.NhanVien.ListNhanVien"
             android:theme="@style/thameActionbar" />
         <activity
-            android:name=".function.ThietLapActivity"
+            android:name=".ChucNang.ThietLapActivity"
             android:exported="true"
             android:label="Tiện ích"
-            android:parentActivityName=".function.MainActivity"
+            android:parentActivityName=".ChucNang.MainActivity"
             android:theme="@style/thameActionbar4" />
         <activity
-            android:name=".function.Account.ThongTinAccountActivity"
+            android:name=".ChucNang.Account.ThongTinAccountActivity"
             android:exported="true"
             android:label=""
-            android:parentActivityName=".function.ThietLapActivity"
+            android:parentActivityName=".ChucNang.ThietLapActivity"
             android:theme="@style/thameActionbar2" />
         <activity
-            android:name=".function.ThanhToanActivity"
+            android:name=".ChucNang.ThanhToanActivity"
             android:exported="true" />
         <activity
-            android:name=".function.SanPham.ListProduct"
+            android:name=".ChucNang.SanPham.ListProduct"
             android:exported="true" />
         <activity
-            android:name=".function.SanPham.SuaSanPhamActivity"
+            android:name=".ChucNang.SanPham.SuaSanPhamActivity"
             android:exported="true" />
-        <activity android:name=".function.SanPham.AddCategory" />
-        <activity android:name=".function.SanPham.AddProduct" />
+        <activity android:name=".ChucNang.SanPham.AddCategory" />
+        <activity android:name=".ChucNang.SanPham.AddProduct" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name=".function.CardProductSQL.CardProduct"
+            android:name=".ChucNang.CardProductSQL.CardProduct"
             android:exported="true" />
         <activity
-            android:name=".function.ChiTietOrder.ChiTietSanPham"
+            android:name=".ChucNang.ChiTietOrder.ChiTietSanPham"
             android:exported="true" />
         <activity
-            android:name=".function.MonOrder"
+            android:name=".ChucNang.MonOrder"
             android:exported="true" />
-        <activity android:name=".function.Manager" />
-        <activity android:name=".function.Income" />
-        <activity android:name=".function.Processing" />
-        <activity android:name=".function.OrderMenu" />
-        <activity android:name=".function.MainActivity" /> <!-- Sign in, SignUp -->
+        <activity android:name=".ChucNang.Manager" />
+        <activity android:name=".ChucNang.Income" />
+        <activity android:name=".ChucNang.Processing" />
+        <activity android:name=".ChucNang.OrderMenu" />
+        <activity android:name=".ChucNang.MainActivity" /> <!-- Sign in, SignUp -->
         <activity
-            android:name=".function.Account.StoreSetting"
-            android:exported="true" />
-        <activity
-            android:name=".function.Account.SignInActivity"
+            android:name=".ChucNang.Account.StoreSetting"
             android:exported="true" />
         <activity
-            android:name=".function.Account.SignUpActivity"
+            android:name=".ChucNang.Account.SignInActivity"
             android:exported="true" />
         <activity
-            android:name=".function.Account.ForgotPasswordActivity"
+            android:name=".ChucNang.Account.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ChucNang.Account.ForgotPasswordActivity"
             android:exported="true" /> <!-- Báo cáo -->
         <activity
-            android:name=".function.BaoCao.DanhSachBienLaiActivity"
+            android:name=".ChucNang.BaoCao.DanhSachBienLaiActivity"
             android:exported="true"
             android:label="Danh sách biên lai"
             android:theme="@style/thameActionbar2" />
         <activity
-            android:name=".function.BaoCao.BaoCaoSanPhamActivity"
+            android:name=".ChucNang.BaoCao.BaoCaoSanPhamActivity"
             android:exported="true"
             android:label="Báo cáo sản phẩm"
-            android:parentActivityName=".function.BaoCao.BaoCaoTongQuanActivity"
+            android:parentActivityName=".ChucNang.BaoCao.BaoCaoTongQuanActivity"
             android:theme="@style/thameActionbar2" />
         <activity
-            android:name=".function.BaoCao.BaoCaoTongQuanActivity"
+            android:name=".ChucNang.BaoCao.BaoCaoTongQuanActivity"
             android:exported="true"
             android:label="Tổng quan"
-            android:parentActivityName=".function.Account.SignUpActivity"
+            android:parentActivityName=".ChucNang.Account.SignUpActivity"
             android:screenOrientation="portrait"
             android:theme="@style/thameActionbar2" />
         <activity
-            android:name=".function.BaoCao.ChiTietNhapKhoActivity"
+            android:name=".ChucNang.BaoCao.ChiTietNhapKhoActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".function.BaoCao.BaoCaoKhoActivity"
+            android:name=".ChucNang.BaoCao.BaoCaoKhoActivity"
             android:screenOrientation="portrait" /> <!-- Đơn online -->
         <activity
-            android:name=".function.DonHangOnline.DuyetDonHangActivity"
+            android:name=".ChucNang.DonHangOnline.DuyetDonHangActivity"
             android:label="Đơn hàng online"
-            android:parentActivityName=".function.MainActivity"
+            android:parentActivityName=".ChucNang.MainActivity"
             android:theme="@style/thameActionbar2" />
         <activity
-            android:name=".function.BaoCao.BaoCaoChiSoActivity"
+            android:name=".ChucNang.BaoCao.BaoCaoChiSoActivity"
             android:label="Chỉ số"
-            android:parentActivityName=".function.BaoCao.BaoCaoTongQuanActivity"
+            android:parentActivityName=".ChucNang.BaoCao.BaoCaoTongQuanActivity"
             android:theme="@style/thameActionbar2" /> <!-- Bếp -->
         <activity
-            android:name=".function.BepBar.BepActivity"
+            android:name=".ChucNang.BepBar.BepActivity"
             android:label="Bếp"
-            android:parentActivityName=".function.MainActivity"
+            android:parentActivityName=".ChucNang.MainActivity"
             android:theme="@style/thameActionbar3" />
         <activity
-            android:name=".function.BepBar.DangXuLyActivity"
+            android:name=".ChucNang.BepBar.DangXuLyActivity"
             android:exported="true"
-            android:parentActivityName=".function.BepBar.BepActivity"
+            android:parentActivityName=".ChucNang.BepBar.BepActivity"
             android:theme="@style/thameActionbar3" />
         <activity
-            android:name=".function.BepBar.DangXuLyOnlineActivity"
+            android:name=".ChucNang.BepBar.DangXuLyOnlineActivity"
             android:exported="true"
-            android:parentActivityName=".function.BepBar.BepActivity"
+            android:parentActivityName=".ChucNang.BepBar.BepActivity"
             android:theme="@style/thameActionbar3" />
         <activity
-            android:name=".function.CuaHangOnline.CuaHangOnlineActivity"
+            android:name=".ChucNang.CuaHangOnline.CuaHangOnlineActivity"
             android:exported="true"
             android:label=""
-            android:parentActivityName=".function.MainActivity"
+            android:parentActivityName=".ChucNang.MainActivity"
             android:theme="@style/thameActionbar4" />
         <activity
-            android:name=".function.CuaHangOnline.ThongTinCuaHangOnlineActivity"
+            android:name=".ChucNang.CuaHangOnline.ThongTinCuaHangOnlineActivity"
             android:exported="true"
             android:label=""
-            android:parentActivityName=".function.MainActivity"
+            android:parentActivityName=".ChucNang.MainActivity"
             android:theme="@style/thameActionbar4" />
         <activity
-            android:name=".function.CuaHangOnline.CauHinhVanChuyenOnlineActivity"
+            android:name=".ChucNang.CuaHangOnline.CauHinhVanChuyenOnlineActivity"
             android:exported="true"
             android:label=""
-            android:parentActivityName=".function.MainActivity"
+            android:parentActivityName=".ChucNang.MainActivity"
             android:theme="@style/thameActionbar4" />
         <activity
-            android:name=".function.CuaHangOnline.QuangCaoActivity"
+            android:name=".ChucNang.CuaHangOnline.QuangCaoActivity"
             android:exported="true"
             android:label=""
-            android:parentActivityName=".function.MainActivity"
+            android:parentActivityName=".ChucNang.MainActivity"
             android:theme="@style/thameActionbar4" />
         <activity
-            android:name=".function.CuaHangOnline.TaoSanPhamOnlineActivity"
+            android:name=".ChucNang.CuaHangOnline.TaoSanPhamOnlineActivity"
             android:exported="true"
             android:label=""
-            android:parentActivityName=".function.MainActivity"
+            android:parentActivityName=".ChucNang.MainActivity"
             android:theme="@style/thameActionbar4" />
         <activity
-            android:name=".function.CuaHangOnline.ThoiGianLamViecOnlineActivity"
+            android:name=".ChucNang.CuaHangOnline.ThoiGianLamViecOnlineActivity"
             android:exported="true"
             android:label=""
-            android:parentActivityName=".function.MainActivity"
+            android:parentActivityName=".ChucNang.MainActivity"
             android:theme="@style/thameActionbar4" />
         <activity
-            android:name=".function.NhanVien.ListNhanVien"
+            android:name=".ChucNang.NhanVien.ListNhanVien"
             android:exported="true"
             android:label="Danh sách nhân viên"
-            android:parentActivityName=".function.MainActivity"
+            android:parentActivityName=".ChucNang.MainActivity"
             android:theme="@style/thameActionbar5" />
         <activity
-            android:name=".function.NhanVien.AddNhanVien"
+            android:name=".ChucNang.NhanVien.AddNhanVien"
             android:exported="true"
             android:label="Thêm nhân viên"
-            android:parentActivityName=".function.NhanVien.ListNhanVien"
+            android:parentActivityName=".ChucNang.NhanVien.ListNhanVien"
             android:theme="@style/thameActionbar5" />
         <activity
-            android:name=".function.KhachHang.ThemKhachHang"
+            android:name=".ChucNang.KhachHang.ThemKhachHang"
             android:exported="true"
             android:label="Thêm khách hàng"
-            android:parentActivityName=".function.KhachHang.ListKhachHang"
+            android:parentActivityName=".ChucNang.KhachHang.ListKhachHang"
             android:theme="@style/thameActionbar5" />
         <activity
-            android:name=".function.NhanVien.ActivityUpdateNhanVien"
+            android:name=".ChucNang.NhanVien.ActivityUpdateNhanVien"
             android:exported="true"
             android:label="Thay đổi thông tin nhân viên"
-            android:parentActivityName=".function.KhachHang.ListKhachHang"
+            android:parentActivityName=".ChucNang.KhachHang.ListKhachHang"
             android:theme="@style/thameActionbar5" />
         <activity
-            android:name=".function.KhachHang.ThemNhomKhachHang"
+            android:name=".ChucNang.KhachHang.ThemNhomKhachHang"
             android:exported="true"
             android:label="Thêm nhóm khách hàng"
-            android:parentActivityName=".function.KhachHang.ListNhomKhachHang"
+            android:parentActivityName=".ChucNang.KhachHang.ListNhomKhachHang"
             android:theme="@style/thameActionbar5" />
         <activity
-            android:name=".function.KhachHang.ListKhachHang"
+            android:name=".ChucNang.KhachHang.ListKhachHang"
             android:exported="true"
             android:label="Danh sách khách hàng"
-            android:parentActivityName=".function.MainActivity"
+            android:parentActivityName=".ChucNang.MainActivity"
             android:theme="@style/thameActionbar5" />
         <activity
-            android:name=".function.KhachHang.SuaKhachHang"
+            android:name=".ChucNang.KhachHang.SuaKhachHang"
             android:exported="true"
             android:label="Thay đổi khách hàng"
-            android:parentActivityName=".function.KhachHang.ListKhachHang"
+            android:parentActivityName=".ChucNang.KhachHang.ListKhachHang"
             android:theme="@style/thameActionbar5" />
         <activity
-            android:name=".function.KhachHang.ListNhomKhachHang"
+            android:name=".ChucNang.KhachHang.ListNhomKhachHang"
             android:exported="true"
             android:label="Danh sách khách hàng"
-            android:parentActivityName=".function.MainActivity"
+            android:parentActivityName=".ChucNang.MainActivity"
             android:theme="@style/thameActionbar5" />
         <activity
-            android:name=".function.KhachHang.SuaNhomKhachHang"
+            android:name=".ChucNang.KhachHang.SuaNhomKhachHang"
             android:exported="true"
             android:label="Danh sách nhóm khách hàng"
-            android:parentActivityName=".function.KhachHang.ListNhomKhachHang"
+            android:parentActivityName=".ChucNang.KhachHang.ListNhomKhachHang"
             android:theme="@style/thameActionbar5" />
         <activity
-            android:name=".function.KhuyenMai.ThemKhuyenMai"
+            android:name=".ChucNang.KhuyenMai.ThemKhuyenMai"
             android:exported="true"
             android:label=""
-            android:parentActivityName=".function.KhuyenMai.ListKhuyenMai"
+            android:parentActivityName=".ChucNang.KhuyenMai.ListKhuyenMai"
             android:theme="@style/thameActionbar6" />
         <activity
-            android:name=".function.KhuyenMai.ListKhuyenMai"
+            android:name=".ChucNang.KhuyenMai.ListKhuyenMai"
             android:exported="true"
             android:label=""
-            android:parentActivityName=".function.MainActivity"
+            android:parentActivityName=".ChucNang.MainActivity"
             android:theme="@style/thameActionbar6" />
         <activity
-            android:name=".function.SanPham.ListCategory"
+            android:name=".ChucNang.SanPham.ListCategory"
             android:exported="true"
             android:label="Danh sách nhóm sản phẩm"
-            android:parentActivityName=".function.MainActivity"
+            android:parentActivityName=".ChucNang.MainActivity"
             android:theme="@style/thameActionbar5" />
         <activity
-            android:name=".function.Account.OnboardingScreenActivity"
+            android:name=".ChucNang.Account.OnboardingScreenActivity"
             android:enabled="true" />
-        <activity android:name=".function.Error" />
+        <activity android:name=".ChucNang.Error" />
 
         <activity
-            android:name=".function.Account.ChiNhanhSignInActivity"
+            android:name=".ChucNang.Account.ChiNhanhSignInActivity"
             android:enabled="true" />
         <activity
-            android:name=".function.TachBanActivity"
+            android:name=".ChucNang.TachBanActivity"
             android:exported="false" />
         <activity
-            android:name=".function.DatBan.DatBan"
+            android:name=".ChucNang.DatBan.DatBan"
             android:exported="false" />
         <activity
-            android:name=".function.DatBan.DanhSachDatBan"
+            android:name=".ChucNang.DatBan.DanhSachDatBan"
             android:exported="false" />
         <activity
-            android:name=".function.BaoCao.CapNhatBaoCaoActivity"
+            android:name=".ChucNang.BaoCao.CapNhatBaoCaoActivity"
             android:enabled="true"
             android:label="Cập nhật nguyên liệu"
-            android:parentActivityName=".function.ThietLapActivity"
+            android:parentActivityName=".ChucNang.ThietLapActivity"
             android:theme="@style/thameActionbar" />
         <activity
-            android:name=".function.SanPham.ThemNguyenLieuActivity"
+            android:name=".ChucNang.SanPham.ThemNguyenLieuActivity"
             android:enabled="true"
-            android:parentActivityName=".function.SanPham.DanhSachNguyenLieuActivity"
+            android:parentActivityName=".ChucNang.SanPham.DanhSachNguyenLieuActivity"
             android:theme="@style/thameActionbar" />
         <activity
-            android:name=".function.BaoCao.ChiTietThuChiActivity"
+            android:name=".ChucNang.BaoCao.ChiTietThuChiActivity"
             android:enabled="true"
             android:label="Chi tiêu"
-            android:parentActivityName=".function.BaoCao.BaoCaoTongQuanActivity"
+            android:parentActivityName=".ChucNang.BaoCao.BaoCaoTongQuanActivity"
             android:theme="@style/thameActionbar" />
-        <activity android:name=".function.KhuyenMaiOffLine.KhuyenMaiOff" />
-        <activity android:name=".function.KhuyenMaiOffLine.KhuyenMaiThanhToan" />
+        <activity android:name=".ChucNang.KhuyenMaiOffLine.KhuyenMaiOff" />
+        <activity android:name=".ChucNang.KhuyenMaiOffLine.KhuyenMaiThanhToan" />
         <activity
-            android:name=".function.ThemBan_KhuVuc.ListBan"
+            android:name=".ChucNang.ThemBan_KhuVuc.ListBan"
             android:exported="false" />
         <activity
-            android:name=".function.ThemBan_KhuVuc.ListKhuVuc"
+            android:name=".ChucNang.ThemBan_KhuVuc.ListKhuVuc"
             android:exported="false" />
         <activity
-            android:name=".function.ThemBan_KhuVuc.SuaBanKV"
+            android:name=".ChucNang.ThemBan_KhuVuc.SuaBanKV"
             android:exported="false" />
         <activity
-            android:name=".function.ThemBan_KhuVuc.SuaKhuVuc"
+            android:name=".ChucNang.ThemBan_KhuVuc.SuaKhuVuc"
             android:exported="false" />
         <activity
-            android:name=".function.ThemBan_KhuVuc.ThemBan"
+            android:name=".ChucNang.ThemBan_KhuVuc.ThemBan"
             android:exported="false" />
         <activity
-            android:name=".function.ThemBan_KhuVuc.ThemKhuVuc"
+            android:name=".ChucNang.ThemBan_KhuVuc.ThemKhuVuc"
             android:exported="false" />
         <activity
-            android:name=".function.KhuyenMaiOffLine.ListChonKhuyenMaiOff"
+            android:name=".ChucNang.KhuyenMaiOffLine.ListChonKhuyenMaiOff"
             android:exported="false" />
         <activity
-            android:name=".function.KhuyenMaiOffLine.ListKhuyeMaiOff"
+            android:name=".ChucNang.KhuyenMaiOffLine.ListKhuyeMaiOff"
             android:exported="false" />
         <activity
-            android:name=".function.SanPham.ListDonViTinh"
+            android:name=".ChucNang.SanPham.ListDonViTinh"
             android:exported="false" />
 
         <activity
-            android:name=".function.DatBan.XacNhanDatBan"
+            android:name=".ChucNang.DatBan.XacNhanDatBan"
             android:exported="false" />
 
     </application>

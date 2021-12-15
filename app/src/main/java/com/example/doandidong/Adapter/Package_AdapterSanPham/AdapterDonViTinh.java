@@ -14,9 +14,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import com.example.doandidong.Model.SanPham.DonViTinh;
+import com.example.doandidong.Data.SanPham.DonViTinh;
 import com.example.doandidong.R;
-import com.example.doandidong.function.SanPham.ListDonViTinh;
+import com.example.doandidong.ChucNang.SanPham.ListDonViTinh;
 import java.util.ArrayList;
 
 public class AdapterDonViTinh extends RecyclerView.Adapter<AdapterDonViTinh.DonViTinhViewHolder> {

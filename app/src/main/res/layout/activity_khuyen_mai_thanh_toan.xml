@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".function.KhuyenMaiOffLine.KhuyenMaiThanhToan">
+    tools:context=".ChucNang.KhuyenMaiOffLine.KhuyenMaiThanhToan">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout11"
