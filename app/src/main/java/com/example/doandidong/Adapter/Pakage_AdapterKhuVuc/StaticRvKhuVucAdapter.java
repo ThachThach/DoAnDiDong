@@ -99,7 +99,7 @@ public class StaticRvKhuVucAdapter  extends RecyclerView.Adapter<StaticRvKhuVucA
                     holder.linearLayouts.setBackgroundResource(R.drawable.rv_khuvuc_hong_bg);
                     holder.linearLayouts.setEnabled(false);
                 } else {
-                    holder.linearLayouts.setBackgroundResource(R.drawable.rv_khuvuc_bg);
+                    holder.linearLayouts.setBackgroundResource(R.drawable.rv_khuvuc_selected_bg);
                     select = false;
                 }
                 if (stamp2 != items.size()) {
@@ -120,9 +120,9 @@ public class StaticRvKhuVucAdapter  extends RecyclerView.Adapter<StaticRvKhuVucA
 //                holder.linearLayouts.setBackgroundResource(R.drawable.rv_khuvuc_hong_bg);
 //            }
             if (item_a == position) {
-                holder.linearLayouts.setBackgroundResource(R.drawable.rv_khuvuc_bg);
-            } else {
                 holder.linearLayouts.setBackgroundResource(R.drawable.rv_khuvuc_selected_bg);
+            } else {
+                holder.linearLayouts.setBackgroundResource(R.drawable.rv_khuvuc_bg);
             }
         }
 

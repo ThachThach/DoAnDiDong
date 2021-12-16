@@ -41,7 +41,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView3"
-            android:layout_width="80dp"
+            android:layout_width="100dp"
             android:layout_height="100dp"
             app:cardCornerRadius="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -50,7 +50,7 @@
 
             <ImageView
                 android:id="@+id/imgsanpham"
-                android:layout_width="80dp"
+                android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:scaleType="fitXY"
                 tools:layout_editor_absoluteX="4dp"
@@ -60,17 +60,20 @@
 
         <TextView
             android:id="@+id/tvtensanpham"
-            android:layout_width="70dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="3dp"
             android:layout_marginTop="15dp"
+            android:layout_marginBottom="34dp"
+
             android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:lines="2"
+            android:maxLines="2"
             android:text="nước cocacola"
             android:textSize="16sp"
-
-            android:maxLines="2"
-            android:lines="2"
             android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/cardView3"
             app:layout_constraintTop_toTopOf="parent" />
 

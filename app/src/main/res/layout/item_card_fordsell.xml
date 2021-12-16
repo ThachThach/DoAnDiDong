@@ -34,7 +34,7 @@
                 android:id="@+id/cell_content_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/vang"
+                android:background="@color/white"
                 >
 
 
@@ -194,6 +194,7 @@
                         </LinearLayout>
 
                         <LinearLayout
+                            android:visibility="gone"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="horizontal">
@@ -247,7 +248,7 @@
                     android:id="@+id/tvtensanpham"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:background="@android:color/darker_gray"
+                    android:background="@color/verypari"
                     android:fontFamily="@font/alike_angular"
                     android:gravity="center_vertical"
                     android:paddingLeft="10dp"

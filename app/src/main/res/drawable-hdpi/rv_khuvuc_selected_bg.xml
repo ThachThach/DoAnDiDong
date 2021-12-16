@@ -71,7 +71,7 @@
     <!-- Background -->
     <item>
         <shape>
-            <solid android:color="@color/vang" />
+            <solid android:color="@color/verypari" />
 
             <corners android:radius="50dp" />
         </shape>

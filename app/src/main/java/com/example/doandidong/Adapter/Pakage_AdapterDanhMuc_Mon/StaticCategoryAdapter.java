@@ -56,7 +56,6 @@ public class StaticCategoryAdapter extends RecyclerView.Adapter<StaticCategoryAd
                 String a="1";
                 ArrayList<StaticBanModel> item = new ArrayList<>();
                 notifyDataSetChanged();
-                Log.d("khungaa",item.size()+"");;
                 for(int i=0;i<items.size();i++){
                     if(position==i){
 
@@ -68,7 +67,7 @@ public class StaticCategoryAdapter extends RecyclerView.Adapter<StaticCategoryAd
         });
         if (select) {
             if(position==0)
-                holder.linearLayouts.setBackgroundResource(R.drawable.rv_khuvuc_bg);
+                holder.linearLayouts.setBackgroundResource(R.drawable.rv_khuvuc_selected_bg);
 
             select = false;
         }
@@ -84,9 +83,9 @@ public class StaticCategoryAdapter extends RecyclerView.Adapter<StaticCategoryAd
 //                holder.linearLayouts.setBackgroundResource(R.drawable.rv_khuvuc_hong_bg);
 //            }
             if (item_a == position) {
-                holder.linearLayouts.setBackgroundResource(R.drawable.rv_khuvuc_bg);
-            } else {
                 holder.linearLayouts.setBackgroundResource(R.drawable.rv_khuvuc_selected_bg);
+            } else {
+                holder.linearLayouts.setBackgroundResource(R.drawable.rv_khuvuc_bg);
             }
         }
     }

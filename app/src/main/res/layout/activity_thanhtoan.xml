@@ -63,7 +63,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="140dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:background="@color/bac"
@@ -76,7 +76,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="50dp"
             android:background="@drawable/vien_border"
             android:orientation="vertical">
 
@@ -87,7 +87,8 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="2dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <TextView
                     android:id="@+id/tv4"
@@ -119,7 +120,8 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="4dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <TextView
                     android:id="@+id/tv3"
@@ -150,7 +152,8 @@
                 android:layout_marginTop="2dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="2dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <TextView
                     android:id="@+id/tv2"
@@ -221,6 +224,7 @@
         android:layout_marginBottom="10dp"
         android:background="@drawable/bnt_backgroudthreedot"
         android:src="@drawable/icons8menudot"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/bnt_xacnhan"
         app:layout_constraintStart_toStartOf="parent"

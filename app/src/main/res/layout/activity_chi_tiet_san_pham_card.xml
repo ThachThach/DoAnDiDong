@@ -61,29 +61,30 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
-            android:layout_width="match_parent"
+            android:layout_width="200dp"
             android:layout_height="100dp"
 
+            android:layout_marginStart="5dp"
             android:layout_marginTop="36dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/vien_border"
             app:cardElevation="8dp"
             app:cardMaxElevation="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/tableRow"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tableRow"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView2">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/borderghichu"
+                android:background="@drawable/vien_border"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView14"
                     android:layout_width="match_parent"
                     android:layout_height="20dp"
-                    android:background="@color/xanh"
+                    android:background="@color/verypari"
                     android:fontFamily="@font/baloo"
                     android:gravity="center"
                     android:text="Đơn Vị Tính"
@@ -146,6 +147,7 @@
             android:gravity="center"
             android:text="15.000"
             android:textSize="16sp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvtensanpham" />
@@ -176,16 +178,16 @@
 
         <TableRow
             android:id="@+id/tableRow"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="130dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="131dp"
-            android:layout_marginBottom="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/vien_border"
+            android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView">
+            app:layout_constraintStart_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
 
             <ImageView
                 android:id="@+id/bnt_minus"
@@ -196,7 +198,7 @@
             <TextView
                 android:id="@+id/tvsoluong"
                 android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_height="52dp"
                 android:fontFamily="@font/baloo"
                 android:gravity="center"
                 android:text="1"
@@ -266,6 +268,7 @@
         android:gravity="top|left"
         android:hint="nhập ghi chú"
         android:inputType="textMultiLine|text"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
