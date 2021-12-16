@@ -53,7 +53,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:background="@color/so_hoa_don"
+                                android:background="@color/verypari"
                                 android:gravity="center"
                                 android:text="Biểu đồ doanh số tuần này"
                                 android:textColor="@color/white"
@@ -104,15 +104,6 @@
                                 android:gravity="center"
                                 android:text="Doanh thu"
                                 android:textColor="@color/white" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:background="@color/doanh_so"
-                                android:gravity="center"
-                                android:text="Chi phí"
-                                android:textColor="@color/white" />
                         </LinearLayout>
 
                         <TextView
@@ -132,7 +123,7 @@
                                 android:layout_weight="1"
 
                                 android:background="@color/white"
-                                android:textColor="@color/link"
+                                android:textColor="@color/verypari"
                                 android:text="Tháng này" />
                             <Button
                                 android:id="@+id/btn_chon_nam"
@@ -140,7 +131,7 @@
                                 android:layout_height="50dp"
                                 android:layout_weight="1"
                                 android:background="@color/white"
-                                android:textColor="@color/link"
+                                android:textColor="@color/verypari"
                                 android:text="Năm này" />
                         </LinearLayout>
 

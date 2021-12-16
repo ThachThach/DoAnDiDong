@@ -5,12 +5,19 @@
       <map>
         <entry key="..\:/LECHIDUC/app/src/main/res/drawable-hdpi/buttom_bg.xml" value="0.3828125" />
         <entry key="..\:/LECHIDUC/app/src/main/res/drawable-hdpi/shadow.xml" value="0.3828125" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/drawable-v24/borderghichu.xml" value="0.3421875" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/drawable-xhdpi/goctron.xml" value="0.3421875" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/drawable-xhdpi/goctron_top_left_right.xml" value="0.3421875" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/drawable-xxxhdpi/buttom_bg_while.xml" value="0.3828125" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/drawable/bg_ngay_baocao_dongy.xml" value="0.3828125" />
         <entry key="..\:/LECHIDUC/app/src/main/res/drawable/buttom_bg.xml" value="1.428125" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/drawable/dialog_ngay_top_right.xml" value="0.3828125" />
         <entry key="..\:/LECHIDUC/app/src/main/res/drawable/shadow.xml" value="0.25416666666666665" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/acivity_dailongtu.xml" value="0.36666666666666664" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_addcategory.xml" value="0.36666666666666664" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_addkhachhang.xml" value="0.36666666666666664" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_addnhanvien.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_addproduct.xml" value="0.36666666666666664" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_bao_cao_chi_so.xml" value="0.36666666666666664" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_bao_cao_kho.xml" value="0.36666666666666664" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_bao_cao_san_pham.xml" value="0.36666666666666664" />
@@ -18,16 +25,90 @@
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_bao_cao_tong_quan.xml" value="0.3453125" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_bep.xml" value="0.36666666666666664" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_bien_lai.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_cap_nhat_chi_tiet_kho.xml" value="0.36666666666666664" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_card_san_pham.xml" value="0.36666666666666664" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_cau_hinh_van_chuyen_online.xml" value="0.23802083333333332" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_dailongthemdonvitinh.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_dang_xu_ly.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_danh_sach_bien_lai.xml" value="0.36666666666666664" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_error.xml" value="0.1" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_introductory.xml" value="0.17447916666666666" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_itemlistdongia.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_khuyen_mai_thanh_toan.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_list_banc.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_list_category.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_list_khu_vuc.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_list_product.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_list_xacnhanbanonline.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_listdonvitinh.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_listkhachhang.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_listkhuyenmai.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_listnhanvien.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_listnhomkhachhang.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_login_admin.xml" value="0.36666666666666664" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_main.xml" value="0.23802083333333332" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_mon_order.xml" value="0.36666666666666664" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_sign_in.xml" value="0.36666666666666664" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_sign_up.xml" value="0.36666666666666664" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_thiet_lap.xml" value="0.2203125" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/activity_thong_tin_account.xml" value="0.33" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/bao_cao_sheet_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/custom_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/custom_loading.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dailog_chitietkho.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dailong_donvitinh.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dailong_updatecategory.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dailongban.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dailongdonvitinh.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dailongthanhtoan.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialog_canhbao.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialog_danh_sach_san_pham.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialog_date.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialog_don_hang_da_xac_nhan.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialog_don_hang_online.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialog_edit_tongtien.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialog_handatban.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialog_huy_don.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialog_huydatban.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialog_khuyenmai1.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialog_khuyenmai2.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialog_ngay_bao_bao.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialog_ngay_bao_bao_san_pham.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialog_suanhomsanpham.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialog_success.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialog_thanhtoan_aleart.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialog_thong_bao_khoa.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialog_thutrongtuan.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialogdanhsachchon_khuyenmaioff.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialogthemdiachikhachhang.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialogthemdonvitinh.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/dialogthemgiakhuyenmaioff.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/fragment_chi_so_san_pham.xml" value="0.19010416666666666" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/fragment_danh_sach_top_san_pham.xml" value="0.33" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/fragment_danh_sanh_don_hang.xml" value="0.3619791666666667" />
         <entry key="..\:/LECHIDUC/app/src/main/res/layout/header_menu.xml" value="0.23802083333333332" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/item_bep_bar_danh_sanh_ban.xml" value="0.33" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/item_mon_ban_offline.xml" value="0.22760416666666666" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/item_product_bep.xml" value="0.33" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/item_sanpham_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/item_sanpham_online.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/item_spinner1_setup_store.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/item_tachban.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/item_themkhuyenmaioff.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/item_top_san_pham.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/layout/slides_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/menu/menu_baobao.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/menu/menu_chon_ngay.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/menu/menu_cua_hang_online.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/menu/menu_danh_sach_nguyen_lieu.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/menu/menu_danh_sach_san_pham_online.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/menu/menu_donhang_online.xml" value="0.36666666666666664" />
         <entry key="..\:/LECHIDUC/app/src/main/res/menu/menu_main.xml" value="0.23802083333333332" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/menu/menu_main2.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/menu/menu_main3.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/menu/menu_nhom_khach_hang.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/menu/menu_save.xml" value="0.36666666666666664" />
+        <entry key="..\:/LECHIDUC/app/src/main/res/menu/menu_sort.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

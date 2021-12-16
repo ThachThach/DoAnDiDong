@@ -77,7 +77,7 @@ public class BaoCaoTongQuanActivity extends AppCompatActivity implements View.On
     private String ID_CUAHNAG;
     private Locale localeVN = new Locale("vi", "VN");
     private NumberFormat currencyVN = NumberFormat.getCurrencyInstance(localeVN);
-    private TextView tien_tongtien, tien_doanhthu, tien_doanhso, tien_dathanhtoan, tien_comonhuy, tien_chitieu, tien_hoadononline,
+    private TextView tien_tongtien, tien_doanhthu, tien_doanhso, tien_dathanhtoan, tien_comonhuy, tien_hoadononline,
             sl_doanhso, sl_dathanhtoan, sl_comonhuy, sl_hoadononline;
     private Button thoiGianLamViec, btnChiNhanh;
     private CardView cv_tongtien, cv_doanhthu, cv_chi, cv_doanhso, cv_dathanhtoan, cv_comonhuy, cv_hoadononline;
@@ -208,28 +208,28 @@ public class BaoCaoTongQuanActivity extends AppCompatActivity implements View.On
         tien_doanhthu = findViewById(R.id.tien_doanhthu);
         tien_doanhso = findViewById(R.id.tien_doanhso);
         tien_dathanhtoan = findViewById(R.id.tien_dathanhtoan);
-        tien_comonhuy = findViewById(R.id.tien_comonhuy);
-        tien_chitieu = findViewById(R.id.tien_chitieu);
+//        tien_comonhuy = findViewById(R.id.tien_comonhuy);
+//        tien_chitieu = findViewById(R.id.tien_chitieu);
 
         //Cardview
         cv_tongtien = findViewById(R.id.cv_tongtien);
         cv_doanhthu = findViewById(R.id.cv_doanhthu);
         cv_doanhso = findViewById(R.id.cv_doanhso);
         cv_dathanhtoan = findViewById(R.id.cv_dathanhtoan);
-        cv_comonhuy = findViewById(R.id.cv_comonhuy);
-        cv_hoadononline = findViewById(R.id.cv_hoadononline);
-        cv_chi = findViewById(R.id.cv_chi);
+//        cv_comonhuy = findViewById(R.id.cv_comonhuy);
+//        cv_hoadononline = findViewById(R.id.cv_hoadononline);
+//        cv_chi = findViewById(R.id.cv_chi);
 
         //textview soluong
         sl_doanhso = findViewById(R.id.sl_doanhso);
         sl_dathanhtoan = findViewById(R.id.sl_dathanhtoan);
-        sl_comonhuy = findViewById(R.id.sl_comonhuy);
-        sl_hoadononline = findViewById(R.id.sl_hoadononline);
+//        sl_comonhuy = findViewById(R.id.sl_comonhuy);
+//        sl_hoadononline = findViewById(R.id.sl_hoadononline);
 
 
         //button
         thoiGianLamViec = findViewById(R.id.btnThoiGianLamViec);
-        btnChiNhanh = findViewById(R.id.btnChiNhanh);
+//        btnChiNhanh = findViewById(R.id.btnChiNhanh);
 
         //Dialog
         dialog = new Dialog(this);
@@ -237,8 +237,8 @@ public class BaoCaoTongQuanActivity extends AppCompatActivity implements View.On
 //        pieChart = (PieChart) findViewById(R.id.pieChart);
         swipeRefreshLayout = findViewById(R.id.refresh);
         layoutProgressBar = findViewById(R.id.layoutProgressBar);
-        tien_hoadononline = findViewById(R.id.tien_hoadononline);
-        cv_chi.setOnClickListener(this);
+//        tien_hoadononline = findViewById(R.id.tien_hoadononline);
+//        cv_chi.setOnClickListener(this);
 
         setOnclick();
     }
@@ -249,10 +249,10 @@ public class BaoCaoTongQuanActivity extends AppCompatActivity implements View.On
         cv_doanhthu.setOnClickListener(this);
         cv_doanhso.setOnClickListener(this);
         cv_dathanhtoan.setOnClickListener(this);
-        cv_comonhuy.setOnClickListener(this);
-        cv_hoadononline.setOnClickListener(this);
+//        cv_comonhuy.setOnClickListener(this);
+//        cv_hoadononline.setOnClickListener(this);
         thoiGianLamViec.setOnClickListener(this);
-        btnChiNhanh.setOnClickListener(this);
+//        btnChiNhanh.setOnClickListener(this);
         tien_tongtien.setOnClickListener(this);
 
         //Dialog
@@ -260,8 +260,6 @@ public class BaoCaoTongQuanActivity extends AppCompatActivity implements View.On
         sheetView = LayoutInflater.from(getApplicationContext()).inflate(R.layout.bao_cao_sheet_dialog, (ViewGroup) findViewById(R.id.sheet_baocao));
         sheetView.findViewById(R.id.viewChiSo).setOnClickListener(BaoCaoTongQuanActivity.this);
         sheetView.findViewById(R.id.viewBanChay).setOnClickListener(BaoCaoTongQuanActivity.this);
-        sheetView.findViewById(R.id.viewHoaDon).setOnClickListener(BaoCaoTongQuanActivity.this);
-        sheetView.findViewById(R.id.viewKho).setOnClickListener(BaoCaoTongQuanActivity.this);
         sheetView.findViewById(R.id.btnBaoCaoClose).setOnClickListener(BaoCaoTongQuanActivity.this);
     }
 
@@ -273,18 +271,18 @@ public class BaoCaoTongQuanActivity extends AppCompatActivity implements View.On
                 break;
             case R.id.cv_doanhthu:
                 break;
-            case R.id.cv_chi:
-                intent = new Intent(BaoCaoTongQuanActivity.this, ChiTietThuChiActivity.class);
-                startActivity(intent);
-                break;
+//            case R.id.cv_chi:
+//                intent = new Intent(BaoCaoTongQuanActivity.this, ChiTietThuChiActivity.class);
+//                startActivity(intent);
+//                break;
             case R.id.cv_doanhso:
                 break;
             case R.id.cv_dathanhtoan:
                 break;
-            case R.id.cv_comonhuy:
-                break;
-            case R.id.cv_hoadononline:
-                break;
+//            case R.id.cv_comonhuy:
+//                break;
+//            case R.id.cv_hoadononline:
+//                break;
             case R.id.viewChiSo:
                 intent = new Intent(BaoCaoTongQuanActivity.this, BaoCaoChiSoActivity.class);
                 startActivity(intent);
@@ -295,26 +293,16 @@ public class BaoCaoTongQuanActivity extends AppCompatActivity implements View.On
                 intent = new Intent(BaoCaoTongQuanActivity.this, BaoCaoSanPhamActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.viewHoaDon:
-                intent = new Intent(BaoCaoTongQuanActivity.this, DanhSachBienLaiActivity.class);
-                startActivity(intent);
-                bottomSheetDialog.dismiss();
-                break;
-            case R.id.viewKho:
-                intent = new Intent(BaoCaoTongQuanActivity.this, BaoCaoKhoActivity.class);
-                startActivity(intent);
-                bottomSheetDialog.dismiss();
-                break;
             case R.id.btnBaoCaoClose:
                 bottomSheetDialog.dismiss();
                 break;
             case R.id.btnThoiGianLamViec:
                 openFeedbackDialog(Gravity.CENTER);
                 break;
-            case R.id.btnChiNhanh:
-                Intent intent1 = new Intent(BaoCaoTongQuanActivity.this, ChiNhanhActivity.class);
-                startActivity(intent1);
-                break;
+//            case R.id.btnChiNhanh:
+//                Intent intent1 = new Intent(BaoCaoTongQuanActivity.this, ChiNhanhActivity.class);
+//                startActivity(intent1);
+//                break;
             case R.id.tien_tongtien:
                 openDialogEditTong(Gravity.CENTER);
                 break;
@@ -560,7 +548,7 @@ public class BaoCaoTongQuanActivity extends AppCompatActivity implements View.On
                         tien_doanhso.setText("0");
                         sl_doanhso.setText("0");
 
-                        tien_chitieu.setText("0");
+//                        tien_chitieu.setText("0");
 
                         swipeRefreshLayout.setRefreshing(false);
 //                        bieuDoSanPham();
@@ -607,10 +595,10 @@ public class BaoCaoTongQuanActivity extends AppCompatActivity implements View.On
                         tien_doanhso.setText(formatStr(tienDTT));
                         sl_doanhso.setText(slDaThanhToan + "");
 
-                        sl_comonhuy.setText(slBiHuy + "");
-                        tien_comonhuy.setText(tienHoaDonBiHuy + "");
+//                        sl_comonhuy.setText(slBiHuy + "");
+//                        tien_comonhuy.setText(tienHoaDonBiHuy + "");
 
-                        tien_chitieu.setText(formatStr(tongChi));
+//                        tien_chitieu.setText(formatStr(tongChi));
 
                         if (kieuHienThi == 1) {
                             thoiGianLamViec.setText("Hôm nay");
@@ -659,8 +647,8 @@ public class BaoCaoTongQuanActivity extends AppCompatActivity implements View.On
                             tongDon+=donHangs.get(i).getDonGia();
                         }
 
-                        sl_hoadononline.setText(donHangs.size()+"");
-                        tien_hoadononline.setText(tongDon+"");
+//                        sl_hoadononline.setText(donHangs.size()+"");
+//                        tien_hoadononline.setText(tongDon+"");
                         dsSanPham.sort((o1, o2) -> o2.getSoLuong() - o1.getSoLuong());
 //                        bieuDoSanPham();
                         i = 0;
@@ -682,7 +670,7 @@ public class BaoCaoTongQuanActivity extends AppCompatActivity implements View.On
                         tien_doanhso.setText("0");
                         sl_doanhso.setText("0");
 
-                        tien_chitieu.setText("0");
+//                        tien_chitieu.setText("0");
 
                         swipeRefreshLayout.setRefreshing(false);
 //                        bieuDoSanPham();
