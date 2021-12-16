@@ -146,6 +146,7 @@ public class OrderMenu extends AppCompatActivity implements Interface_KhuVuc_ban
 
 
         }
+        getDataOrder(actionBar);
 
         dialogban = new Dialog(OrderMenu.this);
         dialogban.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -154,37 +155,6 @@ public class OrderMenu extends AppCompatActivity implements Interface_KhuVuc_ban
 
         ID_datbans = new ArrayList<>();
         trangthaine = "0";
-
-        mDatabase = FirebaseDatabase.getInstance().getReference(id_CuaHang).child("MangDi");
-        mDatabase.child("trangthai").setValue(trangthaine);
-//
-//
-        if (code_chucnang == null) {
-            code_chucnang = "123";
-            FirebaseDatabase.getInstance().getReference(id_CuaHang).child("chucnang").child(code_chucnang).child("trangthai").setValue("0");
-            getDataOrder(actionBar);
-        } else if (code_chucnang != null) {
-            mDatabase2 = FirebaseDatabase.getInstance().getReference(id_CuaHang).child("chucnang").child(code_chucnang);
-            mDatabase2.addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                    if (snapshot.getValue() != null) {
-                        trangthaichucnang = snapshot.child("trangthai").getValue() + "";
-                    }
-                    getDataOrder(actionBar);
-                    tieude(actionBar);
-
-                }
-
-                @Override
-                public void onCancelled(@NonNull DatabaseError error) {
-
-                }
-
-            });
-        }
-
-        callback();
         items = new ArrayList<>();
         recyclerView2 = findViewById(R.id.rv_2);
         staticRvAdapter = new StaticRvAdapter(items, OrderMenu.this, item, "", window, dialogban, trangthaigop, id_ban_thanhtoan, id_khuvuc_thanhtoan, carsList, carsList1, productPushFB, carsListsaukhichon, id_ban_tachban,
@@ -220,21 +190,6 @@ public class OrderMenu extends AppCompatActivity implements Interface_KhuVuc_ban
     public boolean onOptionsItemSelected(@NonNull MenuItem itemk) {
         int item_id = itemk.getItemId();
         TextView ad;
-
-        if(item.size()>0) {
-            if (trangthaichucnang == null) {
-                if (item_id == R.id.mangdi) {
-                    mDatabase = FirebaseDatabase.getInstance().getReference(id_CuaHang).child("MangDi");
-                    mDatabase.child("trangthai").setValue("1");
-                    int code = (int) Math.floor(((Math.random() * 899999) + 100000));
-                    Toast.makeText(this, "mang di", Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(OrderMenu.this, MonOrder.class);
-                    intent.putExtra("id_datban", code + "");
-                    startActivity(intent);
-                    finish();
-                }
-            }
-        }
         if (item_id == android.R.id.home) {
             onBackPressed();
             return true;
@@ -250,42 +205,11 @@ public class OrderMenu extends AppCompatActivity implements Interface_KhuVuc_ban
         return timestamp.getTime() + "";
     }
 
-    private void callback() {
-        ChildEventListener childEventListener = new ChildEventListener() {
-            @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String previousChildName) {
-
-            }
-
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String previousChildName) {
-//
-
-            }
-
-            @Override
-            public void onChildRemoved(DataSnapshot dataSnapshot) {
-            }
-
-            @Override
-            public void onChildMoved(DataSnapshot dataSnapshot, String previousChildName) {
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        };
-        mDatabase.addChildEventListener(childEventListener);
-    }
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
         Intent intent = new Intent(OrderMenu.this, MainActivity.class);
-        FirebaseDatabase.getInstance().getReference(id_CuaHang).child("chucnang").child(code_chucnang).child("trangthai").setValue("0");
-        FirebaseDatabase.getInstance().getReference(id_CuaHang).child("chucnang").child(code_chucnang).removeValue();
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
         finish();
@@ -316,41 +240,8 @@ public class OrderMenu extends AppCompatActivity implements Interface_KhuVuc_ban
                             }
                             String gioDaorder = aaa.child("gioDaOder").getValue() + "";
                             String id_ban = aaa.getKey();
-                            //gopban
-                            if ( trangthaichucnang != null &&trangthaichucnang.equals("1") ) {
-                                if (trangthai1.equals("2") ||trangthai1.equals("5") ||trangthai1.equals("6")) {
-                                    progressBar.setVisibility(View.VISIBLE);
-                                    mm.add(new StaticBanModel(id_ban, tenban, trangthai1, tennhanvien, gioDaorder));
-                                    if(mm.size()<1){
-                                        img_nocart.setVisibility(View.VISIBLE);
-                                    }
-                                }
-                            }
-
-                            //chuyen bàn
-                            else if ( trangthaichucnang != null && trangthaichucnang.equals("2") ) {
-                                if (trangthai1.equals("1")) {
-                                    progressBar.setVisibility(View.VISIBLE);
-                                    mm.add(new StaticBanModel(id_ban, tenban, trangthai1, tennhanvien, gioDaorder));
-                                    if(mm.size()<1){
-                                        img_nocart.setVisibility(View.VISIBLE);
-                                    }
-                                }
-                            }
-                            //tách bàn
-                            else if (  trangthaichucnang != null && trangthaichucnang.equals("3") ) {
-                                progressBar.setVisibility(View.VISIBLE);
-                                if (trangthai1.equals("1") || trangthai1.equals("2")) {
-                                    mm.add(new StaticBanModel(id_ban, tenban, trangthai1, tennhanvien, gioDaorder));
-                                    if(mm.size()<1){
-                                        img_nocart.setVisibility(View.VISIBLE);
-                                    }
-                                }
-                            }
-                            else {
                                 progressBar.setVisibility(View.VISIBLE);
                                 mm.add(new StaticBanModel(id_ban, tenban, trangthai1, tennhanvien, gioDaorder));
-                            }
                         }
 
                         StaticModelKhuVuc product = new StaticModelKhuVuc(tenkhuvuc, trangthai, id_khuvuc, mm);
@@ -363,7 +254,7 @@ public class OrderMenu extends AppCompatActivity implements Interface_KhuVuc_ban
                 progressBar.setVisibility(View.INVISIBLE);
                 recyclerView = findViewById(R.id.rv_1);
                 staticRvKhuVucAdapter = new StaticRvKhuVucAdapter(item, OrderMenu.this, OrderMenu.this);
-                recyclerView.setLayoutManager(new LinearLayoutManager(OrderMenu.this, LinearLayoutManager.HORIZONTAL, false));
+                recyclerView.setLayoutManager(new LinearLayoutManager(OrderMenu.this, LinearLayoutManager.VERTICAL, false));
                 recyclerView.setAdapter(staticRvKhuVucAdapter);
                 staticRvKhuVucAdapter.notifyDataSetChanged();
 
@@ -377,19 +268,7 @@ public class OrderMenu extends AppCompatActivity implements Interface_KhuVuc_ban
     }
 
     public void tieude(ActionBar actionBar) {
-        if (code_chucnang != null) {
-            if (trangthaichucnang.equals("0") || trangthaichucnang == null) {
-                actionBar.setTitle("Danh sách Bàn");
 
-            } else if (trangthaichucnang.equals("1")) {
-                actionBar.setTitle("Gộp bàn");
-            } else if (trangthaichucnang.equals("2")) {
-                actionBar.setTitle("Chuyển Bàn");
-            } else if (trangthaichucnang.equals("3")) {
-                actionBar.setTitle("Tách Bàn");
-            }
-        } else {
-            actionBar.setTitle("Danh sách Bàn");
-        }
+                actionBar.setTitle("Danh sách Bàn");
     }
 }

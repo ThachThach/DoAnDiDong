@@ -46,7 +46,7 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/imgsanpham"
         app:layout_constraintStart_toEndOf="@+id/imgsanpham"
-        app:srcCompat="@drawable/minus" />
+        app:srcCompat="@drawable/icons8minus" />
 
     <TextView
         android:id="@+id/tvsoluong"
@@ -69,7 +69,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/imgminus"
         app:layout_constraintStart_toEndOf="@+id/tvsoluong"
         app:layout_constraintTop_toTopOf="@+id/imgminus"
-        app:srcCompat="@drawable/plus" />
+        app:srcCompat="@drawable/icons8plus" />
 
     <TextView
         android:id="@+id/tvgiasanpham"
@@ -139,7 +139,7 @@
         android:layout_height="50dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="1dp"
-        android:background="@drawable/icons8x"
+        android:background="@drawable/baseline_delete_black_48"
         app:layout_constraintBottom_toTopOf="@+id/Tong1SanPham"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvgiasanpham" />

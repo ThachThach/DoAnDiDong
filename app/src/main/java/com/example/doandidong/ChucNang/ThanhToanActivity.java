@@ -316,12 +316,12 @@ public class ThanhToanActivity extends AppCompatActivity {
             }
         }
 
-        if (item_id == R.id.bacham) {
-            Chongiakhuyenmai(10);
-            Toast.makeText(this, "Chọn Danh sách Khuyến Mãi", Toast.LENGTH_LONG).show();
-
-            return true;
-        }
+//        if (item_id == R.id.bacham) {
+//            Chongiakhuyenmai(10);
+//            Toast.makeText(this, "Chọn Danh sách Khuyến Mãi", Toast.LENGTH_LONG).show();
+//
+//            return true;
+//        }
         if (item_id == android.R.id.home) {
             onBackPressed();
             return true;
