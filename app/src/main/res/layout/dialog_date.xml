@@ -190,20 +190,21 @@
                 android:textColor="@color/link"
                 android:textSize="15sp"
                 android:text="Đóng"/>
+
             <TextView
                 android:id="@+id/xacNhan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/border_linerlayout"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
                 android:layout_marginLeft="20dp"
+                android:background="@drawable/border_linerlayout"
+                android:backgroundTint="@color/verypari"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:text="Xác nhận"
                 android:textColor="@color/white"
-                android:backgroundTint="@color/link"
-                android:textSize="15sp"
-                android:text="Xác nhận"/>
+                android:textSize="15sp" />
         </LinearLayout>
 
     </LinearLayout>

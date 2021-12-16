@@ -46,8 +46,8 @@ public class ThietLapActivity extends AppCompatActivity implements View.OnClickL
 //        layout_nhomkhachang = findViewById(R.id.layout_nhomkhachang);
 //        layout_khuyenmai = findViewById(R.id.layout_khuyenmai);
 //        layout_kho = findViewById(R.id.layout_kho);
-        layout_chi = findViewById(R.id.layout_chi);
-        layout_chinhanh = findViewById(R.id.layout_chinhanh);
+//        layout_chi = findViewById(R.id.layout_chi);
+//        layout_chinhanh = findViewById(R.id.layout_chinhanh);
         layout_sodo = findViewById(R.id.layout_sodo);
         layout_khuvuc = findViewById(R.id.layout_khuvuc);
 //        layout_list_khuyenmai = findViewById(R.id.layout_list_khuyenmai);
@@ -60,9 +60,9 @@ public class ThietLapActivity extends AppCompatActivity implements View.OnClickL
         layout_danhmuc.setOnClickListener(this);
 //        layout_nhomkhachang.setOnClickListener(this);
 //        layout_khuyenmai.setOnClickListener(this);
-        layout_chinhanh.setOnClickListener(this);
+//        layout_chinhanh.setOnClickListener(this);
 //        layout_kho.setOnClickListener(this);
-        layout_chi.setOnClickListener(this);
+//        layout_chi.setOnClickListener(this);
         layout_sodo.setOnClickListener(this);
         layout_khuvuc.setOnClickListener(this);
 //        layout_list_khuyenmai.setOnClickListener(this);
@@ -73,9 +73,9 @@ public class ThietLapActivity extends AppCompatActivity implements View.OnClickL
         isChu = thongTinCuaHangSql.isChu();
 
         if (isChu) {
-            layout_chinhanh.setVisibility(View.VISIBLE);
+//            layout_chinhanh.setVisibility(View.VISIBLE);
         }else {
-            layout_chinhanh.setVisibility(View.GONE);
+//            layout_chinhanh.setVisibility(View.GONE);
         }
     }
 
@@ -143,22 +143,22 @@ public class ThietLapActivity extends AppCompatActivity implements View.OnClickL
 //                    Toast.makeText(this, "Không thể thực hiện hành động này", Toast.LENGTH_SHORT).show();
 //                }
 //                break;
-            case R.id.layout_chi:
-                if (isChu || nhanVien.getChucVu().get(2) ) {
-                    Intent intent8 = new Intent(ThietLapActivity.this, ChiTieuActivity.class);
-                    startActivity(intent8);
-                }else {
-                    Toast.makeText(this, "Không thể thực hiện hành động này", Toast.LENGTH_SHORT).show();
-                }
-                break;
-            case R.id.layout_chinhanh:
-                if (isChu) {
-                    Intent intent7 = new Intent(ThietLapActivity.this, ChiNhanhActivity.class);
-                    startActivity(intent7);
-                }else {
-                    Toast.makeText(this, "Không thể thực hiện hành động này", Toast.LENGTH_SHORT).show();
-                }
-                break;
+//            case R.id.layout_chi:
+//                if (isChu || nhanVien.getChucVu().get(2) ) {
+//                    Intent intent8 = new Intent(ThietLapActivity.this, ChiTieuActivity.class);
+//                    startActivity(intent8);
+//                }else {
+//                    Toast.makeText(this, "Không thể thực hiện hành động này", Toast.LENGTH_SHORT).show();
+//                }
+//                break;
+//            case R.id.layout_chinhanh:
+//                if (isChu) {
+//                    Intent intent7 = new Intent(ThietLapActivity.this, ChiNhanhActivity.class);
+//                    startActivity(intent7);
+//                }else {
+//                    Toast.makeText(this, "Không thể thực hiện hành động này", Toast.LENGTH_SHORT).show();
+//                }
+//                break;
             case R.id.layout_sodo:
                 if (isChu) {
                     Intent intent10 = new Intent(ThietLapActivity.this, ListBan.class);

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_baocao"
+    android:background="@color/white"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
@@ -37,24 +37,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/armata"
-                    android:text="@string/tinh_hinh_tai_chinh"
-                    android:textColor="@color/link"
-                    android:textSize="17sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cv_tongtien"
                     style="@style/cardview_tongquan">
@@ -73,12 +55,6 @@
                         android:text="@string/so_0"
                         android:textColor="@color/link"
                         android:textSize="25sp" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="5dp"
-                        android:layout_gravity="bottom"
-                        android:background="@color/vang" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -147,16 +123,6 @@
 
             <!--            </LinearLayout>-->
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="15dp"
-                android:fontFamily="@font/armata"
-                android:text="@string/tong_quan"
-                android:textColor="@color/link"
-                android:textSize="17sp" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -171,29 +137,18 @@
                     android:text="01/07 - 23/07"
                     android:textColor="@color/white" />
 
-                <Button
-                    android:id="@+id/btnChiNhanh"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="3"
-                    android:background="@drawable/buttom_bg_while"
-                    android:text="@string/chi_nhanh"
-                    android:textColor="@color/white" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="5dp">
+                android:visibility="gone"
+                android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cv_doanhthu"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_margin="1dp"
-                    app:cardCornerRadius="2dp"
-                    app:cardElevation="0dp">
+                    style="@style/cardview_hoadon"
+                    android:backgroundTint="@color/colorShimmer">
 
                     <TextView
                         android:id="@+id/tv_doanhThu"
@@ -214,44 +169,7 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cv_chi"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_margin="1dp"
-                    app:cardCornerRadius="2dp"
-                    app:cardElevation="0dp">
-
-                    <TextView
-                        android:id="@+id/tv_chitieu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="top|center"
-                        android:fontFamily="@font/alike"
-                        android:text="@string/chi_phi"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/tien_chitieu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom|center"
-                        android:text="@string/so_0"
-                        android:textSize="20sp" />
-
-                </androidx.cardview.widget.CardView>
-
             </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="15dp"
-                android:fontFamily="@font/armata"
-                android:text="@string/hoa_don"
-                android:textColor="@color/link"
-                android:textSize="17sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -260,7 +178,8 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cv_doanhso"
-                    style="@style/cardview_hoadon">
+                    style="@style/cardview_hoadon"
+                    android:backgroundTint="@color/colorShimmer">
 
                     <TextView
                         style="@style/title_hoadon"
@@ -289,17 +208,19 @@
                         style="@style/tien_HoaDon"
                         android:text="@string/so_0" />
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp"
-                        android:layout_gravity="bottom"
-                        android:background="@color/btn_gio" />
-
                 </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cv_dathanhtoan"
-                    style="@style/cardview_hoadon">
+                    style="@style/cardview_hoadon"
+                    android:backgroundTint="@color/colorShimmer">
 
                     <TextView
                         style="@style/title_hoadon"
@@ -327,135 +248,9 @@
                         style="@style/tien_HoaDon"
                         android:text="@string/so_0" />
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp"
-                        android:layout_gravity="bottom"
-                        android:background="@color/btn_gio" />
-
                 </androidx.cardview.widget.CardView>
 
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cv_comonhuy"
-                    style="@style/cardview_hoadon">
-
-                    <TextView
-                        style="@style/title_hoadon"
-                        android:text="@string/hoa_don_bi_huy" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom|center_horizontal"
-                        android:layout_marginBottom="5dp">
-
-                        <TextView
-                            style="@style/so_luong"
-                            android:text="@string/so_luong" />
-
-                        <TextView
-                            android:id="@+id/sl_comonhuy"
-                            style="@style/so_luong"
-                            android:text="@string/so_0" />
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:id="@+id/tien_comonhuy"
-                        style="@style/tien_HoaDon"
-                        android:text="@string/so_0" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp"
-                        android:layout_gravity="bottom"
-                        android:background="@color/btn_gio" />
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cv_hoadononline"
-                    style="@style/cardview_hoadon">
-
-                    <TextView
-                        style="@style/title_hoadon"
-                        android:text="@string/hoa_don_online" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom|center_horizontal"
-                        android:layout_marginBottom="5dp">
-
-                        <TextView
-                            style="@style/so_luong"
-                            android:text="@string/so_luong" />
-
-                        <TextView
-                            android:id="@+id/sl_hoadononline"
-                            style="@style/so_luong"
-                            android:text="@string/so_0" />
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:id="@+id/tien_hoadononline"
-                        style="@style/tien_HoaDon"
-                        android:text="@string/so_0" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp"
-                        android:layout_gravity="bottom"
-                        android:background="@color/btn_gio" />
-
-                </androidx.cardview.widget.CardView>
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="15dp"
-                android:fontFamily="@font/armata"
-                android:text="Sản phẩm"
-                android:textColor="@color/link"
-                android:textSize="17sp" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/layoutPie"
-                android:layout_width="match_parent"
-                android:layout_height="400dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/alike_angular"
-                    android:text="Không có dữ liệu"
-                    android:textColor="@color/link"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <!--                <com.github.mikephil.charting.charts.PieChart-->
-                <!--                    android:id="@+id/pieChart"-->
-                <!--                    android:layout_width="match_parent"-->
-                <!--                    android:layout_height="match_parent"-->
-                <!--                    android:layout_margin="20dp"-->
-                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
-                <!--                    app:layout_constraintStart_toStartOf="parent"-->
-                <!--                    app:layout_constraintTop_toTopOf="parent" />-->
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
     </ScrollView>

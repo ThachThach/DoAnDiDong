@@ -12,7 +12,7 @@
     <!--Báo cáo-->
     <string name="tinh_hinh_tai_chinh">Tình hình tài chính</string>
     <string name="toc_do_tang_truong">Tốc độ tăng trưởng >></string>
-    <string name="tong_tien">Tổng tiền</string>
+    <string name="tong_tien">Tổng tiền hiện tại</string>
     <string name="no_phai_thu">Nợ phải thu</string>
     <string name="no_phai_tra">Nợ phải trả</string>
     <string name="tong_quan">Tổng quan</string>

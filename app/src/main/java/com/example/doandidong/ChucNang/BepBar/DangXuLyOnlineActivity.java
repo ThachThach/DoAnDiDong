@@ -64,7 +64,7 @@ public class DangXuLyOnlineActivity extends AppCompatActivity {
     private void IDLayout() {
         khuvuc = findViewById(R.id.khuvuc);
         soluong = findViewById(R.id.soluong);
-        tongdon = findViewById(R.id.tongdon);
+//        tongdon = findViewById(R.id.tongdon);
         thoigian = findViewById(R.id.thoigian);
         hoanthanh = findViewById(R.id.hoanthanh);
         recycleview = findViewById(R.id.recycleview);

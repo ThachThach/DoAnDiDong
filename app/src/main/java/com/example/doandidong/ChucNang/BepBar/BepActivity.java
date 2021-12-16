@@ -25,12 +25,9 @@ public class BepActivity extends AppCompatActivity {
         tabLayout=(TabLayout)findViewById(R.id.tabLayout);
         viewPager=(ViewPager)findViewById(R.id.viewLayout);
 
-        tabLayout.addTab(tabLayout.newTab().setText("Cửa hàng - Chờ xử lí"));
-        tabLayout.addTab(tabLayout.newTab().setText("Cửa hàng - Đang sử lí"));
-        tabLayout.addTab(tabLayout.newTab().setText("Cửa hàng - Hoàn thành"));
-        tabLayout.addTab(tabLayout.newTab().setText("Online - chờ sử lí"));
-        tabLayout.addTab(tabLayout.newTab().setText("Online - đang sử lí"));
-        tabLayout.addTab(tabLayout.newTab().setText("Online - hoàn thành"));
+        tabLayout.addTab(tabLayout.newTab().setText("Chưa xửa lí"));
+        tabLayout.addTab(tabLayout.newTab().setText("Đang sử lí"));
+        tabLayout.addTab(tabLayout.newTab().setText("Hoàn thành"));
 
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 

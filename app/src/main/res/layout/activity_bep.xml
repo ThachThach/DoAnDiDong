@@ -18,9 +18,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tabTextColor="@color/xanh"
-        tools:ignore="MissingConstraints"
-        app:tabMode="scrollable"/>
+        app:tabTextColor="@color/verypari"
+        tools:ignore="MissingConstraints" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewLayout"

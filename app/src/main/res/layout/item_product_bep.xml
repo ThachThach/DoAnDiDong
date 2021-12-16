@@ -5,13 +5,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     android:layout_marginTop="10dp"
-    android:layout_marginEnd="10dp"
-    android:layout_marginStart="10dp"
     android:background="#FBFBFB">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/verypari"
         android:padding="10dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -39,7 +38,7 @@
                 android:layout_toEndOf="@+id/circle_imgView"
                 android:padding="2dp"
                 android:text="Ten Category"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"></TextView>
 
@@ -53,7 +52,7 @@
                 android:layout_toEndOf="@+id/textnameProduct"
                 android:padding="2dp"
                 android:text="Số lượng: "
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="10sp"
                 android:textStyle="bold"></TextView>
 
@@ -64,10 +63,11 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="7dp"
                 android:layout_marginBottom="2dp"
+                android:visibility="gone"
                 android:layout_toEndOf="@+id/textnameProduct"
                 android:padding="2dp"
                 android:text="Yêu cầu: "
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="10sp"
                 android:textStyle="bold"></TextView>
         </LinearLayout>
