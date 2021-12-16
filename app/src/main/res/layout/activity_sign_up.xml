@@ -7,49 +7,34 @@
     android:layout_height="match_parent"
     tools:context=".ChucNang.Account.SignUpActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_height="match_parent"
             android:background="@color/white"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginLeft="30dp"
-                android:src="@drawable/coffeeshop"
-                android:transitionName="logo_image" />
-
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:fontFamily="@font/baloo"
-                android:text="@string/wellcom"
-                android:textSize="40sp"
-                android:textStyle="bold"
-                android:transitionName="logo_welcome" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:fontFamily="@font/armata"
-                android:text="@string/signIpNow"
-                android:textSize="18sp"
-                android:transitionName="logo_signin" />
-
-            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="30dp"
-                android:orientation="vertical">
+                android:fontFamily="@font/bungee_shade"
+                android:text="Registration"
+                android:textColor="@color/verypari"
+                android:textSize="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.32999998">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/username_input"
@@ -59,9 +44,9 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:hint="@string/Username"
-                    app:startIconDrawable="@drawable/person_24"
                     app:counterEnabled="true"
-                    app:counterMaxLength="50">
+                    app:counterMaxLength="50"
+                    app:startIconDrawable="@drawable/person_24">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edt_username"
@@ -83,8 +68,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    app:startIconDrawable="@drawable/email_24"
-                    android:hint="@string/email">
+                    android:hint="@string/email"
+                    app:startIconDrawable="@drawable/email_24">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edt_email"
@@ -105,8 +90,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    app:startIconDrawable="@drawable/phone_24"
-                    android:hint="@string/phone">
+                    android:hint="@string/phone"
+                    app:startIconDrawable="@drawable/phone_24">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edt_phone"
@@ -128,8 +113,8 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:hint="@string/password"
-                    app:startIconDrawable="@drawable/password_24"
-                    app:passwordToggleEnabled="true">
+                    app:passwordToggleEnabled="true"
+                    app:startIconDrawable="@drawable/password_24">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edt_password"
@@ -151,8 +136,8 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:hint="@string/confirm_password"
-                    app:startIconDrawable="@drawable/password_24"
-                    app:passwordToggleEnabled="true">
+                    app:passwordToggleEnabled="true"
+                    app:startIconDrawable="@drawable/password_24">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edt_confirm_password"
@@ -172,62 +157,29 @@
                 android:id="@+id/btn_signup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
                 android:background="@drawable/buttom_bg"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
                 android:text="@string/signup"
                 android:textColor="#fff"
                 android:textStyle="bold"
-                android:transitionName="button_sign" />
+                android:transitionName="button_sign"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+                app:layout_constraintVertical_bias="0.16000003" />
 
             <Button
                 android:id="@+id/btn_signin_now"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
                 android:background="#00000000"
                 android:text="@string/already_accund"
                 android:textColor="#000"
-                android:transitionName="button_signin" />
+                android:transitionName="button_signin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_signup" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_gravity="bottom|center"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:paddingBottom="30dp">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="30dp"
-                    android:transitionName="button_sign"
-                    app:cardCornerRadius="3dp"
-                    app:cardElevation="4dp">
-
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="10dp"
-                        android:src="@drawable/icon_google" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="5dp"
-                        android:text="@string/signUpGoodle" />
-
-                </androidx.cardview.widget.CardView>
-
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

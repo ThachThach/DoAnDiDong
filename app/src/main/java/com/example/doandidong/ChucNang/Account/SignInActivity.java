@@ -79,9 +79,7 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
         password = findViewById(R.id.edt_password);
         imageView = findViewById(R.id.imageView);
         forgetPass = findViewById(R.id.lbl_forget_pass);
-        btn_admin = findViewById(R.id.btn_admin);
         layout = findViewById(R.id.layout);
-        layout.setAlpha(1);
         dialog = new Dialog(SignInActivity.this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.custom_loading);
@@ -101,7 +99,6 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
         mAuth = FirebaseAuth.getInstance();
 
         sigupNow.setOnClickListener(this);
-        btn_admin.setOnClickListener(this);
         login.setOnClickListener(this);
         forgetPass.setOnClickListener(this);
     }
@@ -123,38 +120,12 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
 
     private void callSignup() {
         Intent intent = new Intent(SignInActivity.this, SignUpActivity.class);
-
-        Pair[] pairs = new Pair[7];
-
-        pairs[0] = new Pair<View, String>(imageView, "logo_image");
-        pairs[1] = new Pair<View, String>(logoText, "logo_welcome");
-        pairs[2] = new Pair<View, String>(sloganText, "logo_signin");
-        pairs[3] = new Pair<View, String>(username, "edt_username");
-        pairs[4] = new Pair<View, String>(password, "edt_password");
-        pairs[5] = new Pair<View, String>(forgetPass, "lbl_forget");
-        pairs[6] = new Pair<View, String>(login, "button_sign");
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(SignInActivity.this, pairs);
-            startActivity(intent, options.toBundle());
-        }
+        startActivity(intent);
     }
 
     private void callForgetPassword() {
         Intent intent = new Intent(SignInActivity.this, ForgotPasswordActivity.class);
-
-        Pair[] pairs = new Pair[5];
-
-        pairs[0] = new Pair<View, String>(imageView, "logo_image");
-        pairs[1] = new Pair<View, String>(logoText, "logo_welcome");
-        pairs[2] = new Pair<View, String>(sloganText, "logo_signin");
-        pairs[3] = new Pair<View, String>(username, "edt_username");
-        pairs[4] = new Pair<View, String>(login, "button_sign");
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(SignInActivity.this, pairs);
-            startActivity(intent, options.toBundle());
-        }
+        startActivity(intent);
     }
 
     // onclick login

@@ -38,7 +38,7 @@ public class IntroductoryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setStatusBarColor(ContextCompat.getColor(IntroductoryActivity.this, R.color.hong_nhat));
+        getWindow().setStatusBarColor(ContextCompat.getColor(IntroductoryActivity.this, R.color.verypari));
         setContentView(R.layout.activity_introductory);
 
         mFirebaseAuth = FirebaseAuth.getInstance();
@@ -103,7 +103,7 @@ public class IntroductoryActivity extends AppCompatActivity {
                             }
                         });
                     }else {
-                        Intent intent = new Intent(IntroductoryActivity.this, OnboardingScreenActivity.class);
+                        Intent intent = new Intent(IntroductoryActivity.this, SignInActivity.class);
                         startActivity(intent);
                         finish();
                     }

@@ -266,9 +266,6 @@
             android:label="Danh sách nhóm sản phẩm"
             android:parentActivityName=".ChucNang.MainActivity"
             android:theme="@style/thameActionbar5" />
-        <activity
-            android:name=".ChucNang.Account.OnboardingScreenActivity"
-            android:enabled="true" />
         <activity android:name=".ChucNang.Error" />
 
         <activity

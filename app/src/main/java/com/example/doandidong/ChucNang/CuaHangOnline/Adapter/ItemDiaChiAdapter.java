@@ -33,7 +33,7 @@ public class ItemDiaChiAdapter extends RecyclerView.Adapter<ItemDiaChiAdapter.Th
         }
         else
         {
-            holder.line.setBackgroundResource(R.color.hong_nhat);
+            holder.line.setBackgroundResource(R.color.verypari);
         }
 
     }

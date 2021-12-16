@@ -29,7 +29,7 @@ import com.example.doandidong.ChucNang.ThemBan_KhuVuc.ListKhuVuc;
 
 public class ThietLapActivity extends AppCompatActivity implements View.OnClickListener {
     private LinearLayout layout_taikhoan, layout_quanlynhanvien, layout_sanpham, layout_danhmuc,
-            layout_nhomkhachang, layout_khuyenmai, layout_kho, layout_chi, layout_chinhanh, layout_sodo, layout_khuvuc, layout_list_khuyenmai,layout_donvitinh;
+            layout_chi, layout_chinhanh, layout_sodo, layout_khuvuc,layout_donvitinh;
     private String ID_CUAHANG;
     private ThongTinCuaHangSql thongTinCuaHangSql;
     private NhanVien nhanVien;
@@ -43,14 +43,14 @@ public class ThietLapActivity extends AppCompatActivity implements View.OnClickL
         layout_quanlynhanvien = findViewById(R.id.layout_quanlynhanvien);
         layout_sanpham = findViewById(R.id.layout_sanpham);
         layout_danhmuc = findViewById(R.id.layout_danhmuc);
-        layout_nhomkhachang = findViewById(R.id.layout_nhomkhachang);
-        layout_khuyenmai = findViewById(R.id.layout_khuyenmai);
-        layout_kho = findViewById(R.id.layout_kho);
+//        layout_nhomkhachang = findViewById(R.id.layout_nhomkhachang);
+//        layout_khuyenmai = findViewById(R.id.layout_khuyenmai);
+//        layout_kho = findViewById(R.id.layout_kho);
         layout_chi = findViewById(R.id.layout_chi);
         layout_chinhanh = findViewById(R.id.layout_chinhanh);
         layout_sodo = findViewById(R.id.layout_sodo);
         layout_khuvuc = findViewById(R.id.layout_khuvuc);
-        layout_list_khuyenmai = findViewById(R.id.layout_list_khuyenmai);
+//        layout_list_khuyenmai = findViewById(R.id.layout_list_khuyenmai);
         layout_donvitinh = findViewById(R.id.layout_donvitinh);
 
 
@@ -58,14 +58,14 @@ public class ThietLapActivity extends AppCompatActivity implements View.OnClickL
         layout_quanlynhanvien.setOnClickListener(this);
         layout_sanpham.setOnClickListener(this);
         layout_danhmuc.setOnClickListener(this);
-        layout_nhomkhachang.setOnClickListener(this);
-        layout_khuyenmai.setOnClickListener(this);
+//        layout_nhomkhachang.setOnClickListener(this);
+//        layout_khuyenmai.setOnClickListener(this);
         layout_chinhanh.setOnClickListener(this);
-        layout_kho.setOnClickListener(this);
+//        layout_kho.setOnClickListener(this);
         layout_chi.setOnClickListener(this);
         layout_sodo.setOnClickListener(this);
         layout_khuvuc.setOnClickListener(this);
-        layout_list_khuyenmai.setOnClickListener(this);
+//        layout_list_khuyenmai.setOnClickListener(this);
         layout_donvitinh.setOnClickListener(this);
 
         thongTinCuaHangSql = new ThongTinCuaHangSql(this);
@@ -113,36 +113,36 @@ public class ThietLapActivity extends AppCompatActivity implements View.OnClickL
                     Toast.makeText(this, "Không thể thực hiện hành động này", Toast.LENGTH_SHORT).show();
                 }
                 break;
-            case R.id.layout_nhomkhachang:
-                if (isChu) {
-                    Intent intent5 = new Intent(ThietLapActivity.this, ListKhachHang.class);
-                    startActivity(intent5);
-                } else if (nhanVien.getChucVu().get(6)) {
-                    Intent intent5 = new Intent(ThietLapActivity.this, ListKhachHang.class);
-                    startActivity(intent5);
-                }else {
-                    Toast.makeText(this, "Không thể thực hiện hành động này", Toast.LENGTH_SHORT).show();
-                }
-                break;
-            case R.id.layout_khuyenmai:
-                if (isChu) {
-                    Intent intent6 = new Intent(ThietLapActivity.this, KhuyenMaiOff.class);
-                    startActivity(intent6);
-                } else if (nhanVien.getChucVu().get(7)) {
-                    Intent intent6 = new Intent(ThietLapActivity.this, KhuyenMaiOff.class);
-                    startActivity(intent6);
-                } else {
-                    Toast.makeText(this, "Không thể thực hiện hành động này", Toast.LENGTH_SHORT).show();
-                }
-                break;
-            case R.id.layout_kho:
-                if (isChu || nhanVien.getChucVu().get(1)) {
-                    Intent intent9 = new Intent(ThietLapActivity.this, CapNhatBaoCaoActivity.class);
-                    startActivity(intent9);
-                } else {
-                    Toast.makeText(this, "Không thể thực hiện hành động này", Toast.LENGTH_SHORT).show();
-                }
-                break;
+//            case R.id.layout_nhomkhachang:
+//                if (isChu) {
+//                    Intent intent5 = new Intent(ThietLapActivity.this, ListKhachHang.class);
+//                    startActivity(intent5);
+//                } else if (nhanVien.getChucVu().get(6)) {
+//                    Intent intent5 = new Intent(ThietLapActivity.this, ListKhachHang.class);
+//                    startActivity(intent5);
+//                }else {
+//                    Toast.makeText(this, "Không thể thực hiện hành động này", Toast.LENGTH_SHORT).show();
+//                }
+//                break;
+//            case R.id.layout_khuyenmai:
+//                if (isChu) {
+//                    Intent intent6 = new Intent(ThietLapActivity.this, KhuyenMaiOff.class);
+//                    startActivity(intent6);
+//                } else if (nhanVien.getChucVu().get(7)) {
+//                    Intent intent6 = new Intent(ThietLapActivity.this, KhuyenMaiOff.class);
+//                    startActivity(intent6);
+//                } else {
+//                    Toast.makeText(this, "Không thể thực hiện hành động này", Toast.LENGTH_SHORT).show();
+//                }
+//                break;
+//            case R.id.layout_kho:
+//                if (isChu || nhanVien.getChucVu().get(1)) {
+//                    Intent intent9 = new Intent(ThietLapActivity.this, CapNhatBaoCaoActivity.class);
+//                    startActivity(intent9);
+//                } else {
+//                    Toast.makeText(this, "Không thể thực hiện hành động này", Toast.LENGTH_SHORT).show();
+//                }
+//                break;
             case R.id.layout_chi:
                 if (isChu || nhanVien.getChucVu().get(2) ) {
                     Intent intent8 = new Intent(ThietLapActivity.this, ChiTieuActivity.class);
@@ -175,17 +175,17 @@ public class ThietLapActivity extends AppCompatActivity implements View.OnClickL
                     Toast.makeText(this, "Không thể thực hiện hành động này", Toast.LENGTH_SHORT).show();
                 }
                 break;
-            case R.id.layout_list_khuyenmai:
-                if (isChu) {
-                    Intent intent12 = new Intent(ThietLapActivity.this, ListKhuyeMaiOff.class);
-                    startActivity(intent12);
-                } else if (nhanVien.getChucVu().get(7)) {
-                    Intent intent12 = new Intent(ThietLapActivity.this, ListKhuyeMaiOff.class);
-                    startActivity(intent12);
-                } else {
-                    Toast.makeText(this, "Không thể thực hiện hành động này", Toast.LENGTH_SHORT).show();
-                }
-                break;
+//            case R.id.layout_list_khuyenmai:
+//                if (isChu) {
+//                    Intent intent12 = new Intent(ThietLapActivity.this, ListKhuyeMaiOff.class);
+//                    startActivity(intent12);
+//                } else if (nhanVien.getChucVu().get(7)) {
+//                    Intent intent12 = new Intent(ThietLapActivity.this, ListKhuyeMaiOff.class);
+//                    startActivity(intent12);
+//                } else {
+//                    Toast.makeText(this, "Không thể thực hiện hành động này", Toast.LENGTH_SHORT).show();
+//                }
+//                break;
 
             case R.id.layout_donvitinh:
                 if (isChu) {
