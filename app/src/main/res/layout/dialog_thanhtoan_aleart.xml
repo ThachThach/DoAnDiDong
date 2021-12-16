@@ -7,7 +7,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_height="150dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
@@ -26,7 +26,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/icons8warning128" />
+            app:srcCompat="@drawable/icons8warning128"
+            android:visibility="gone"/>
 
         <TextView
             android:id="@+id/textView"
@@ -36,6 +37,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:text="waring"
+            android:visibility="gone"
             android:textColor="@android:color/black"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -48,6 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:layout_marginTop="20dp"
             android:text="Bạn!! Chắc Chắn muốn Thanh Toán ?? "
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
@@ -91,7 +94,7 @@
             android:layout_marginBottom="16dp"
             android:background="@android:color/transparent"
             android:stateListAnimator="@null"
-            android:text="Okay"
+            android:text="Oke"
             android:textAllCaps="false"
             android:textColor="@android:color/holo_blue_dark"
             app:layout_constraintBottom_toBottomOf="parent"

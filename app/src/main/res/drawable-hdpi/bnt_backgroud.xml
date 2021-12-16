@@ -72,7 +72,7 @@
     <item>
         <shape>
             <solid android:color="@color/verypari" />
-<!--            <item android:drawable="xanh" />-->
+            <!--            <item android:drawable="xanh" />-->
 
             <corners android:radius="5dp" />
         </shape>

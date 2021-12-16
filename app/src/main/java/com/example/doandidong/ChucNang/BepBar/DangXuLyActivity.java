@@ -52,10 +52,10 @@ public class DangXuLyActivity extends AppCompatActivity {
     }
 
     private void IDLayout() {
-        khuvuc = findViewById(R.id.khuvuc);
-        soluong = findViewById(R.id.soluong);
-        tongdon = findViewById(R.id.tongdon);
-        thoigian = findViewById(R.id.thoigian);
+//        khuvuc = findViewById(R.id.khuvuc);
+//        soluong = findViewById(R.id.soluong);
+//        tongdon = findViewById(R.id.tongdon);
+//        thoigian = findViewById(R.id.thoigian);
         hoanthanh = findViewById(R.id.hoanthanh);
         recycleview = findViewById(R.id.recycleview);
     }
@@ -88,15 +88,15 @@ public class DangXuLyActivity extends AppCompatActivity {
                 sanPhamOder.setNameTable(key);
 
                 if (KhuVucBan(sanPhamOder).length == 2) {
-                    khuvuc.setText("Bàn " + KhuVucBan(sanPhamOder)[0] + " - Khu vực " + KhuVucBan(sanPhamOder)[1]);
+//                    khuvuc.setText("Bàn " + KhuVucBan(sanPhamOder)[0] + " - Khu vực " + KhuVucBan(sanPhamOder)[1]);
                 } else {
-                    khuvuc.setText("ID: " + sanPhamOder.getNameTable());
+//                    khuvuc.setText("ID: " + sanPhamOder.getNameTable());
                 }
 
 
-                soluong.setText(soLuong(sanPhamOder) + "");
-                tongdon.setText(TongTien(sanPhamOder) + "");
-                thoigian.setText(changeDate(sanPhamOder.getDate() + ""));
+//                soluong.setText(soLuong(sanPhamOder) + "");
+//                tongdon.setText(TongTien(sanPhamOder) + "");
+//                thoigian.setText(changeDate(sanPhamOder.getDate() + ""));
 
                 recycleview.setLayoutManager(new GridLayoutManager(DangXuLyActivity.this, 1));
                 chiTietDonHangAdapter = new ChiTietDonHangAdapter(DangXuLyActivity.this, (ArrayList<Mon>) sanPhamOder.getSanpham());

@@ -56,6 +56,7 @@ public class StaticCategoryAdapter extends RecyclerView.Adapter<StaticCategoryAd
                 String a="1";
                 ArrayList<StaticBanModel> item = new ArrayList<>();
                 notifyDataSetChanged();
+                Log.d("khungaa",item.size()+"");
                 for(int i=0;i<items.size();i++){
                     if(position==i){
 

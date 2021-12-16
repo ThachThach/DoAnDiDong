@@ -33,15 +33,6 @@ public class Fragment extends FragmentPagerAdapter {
             case 2:
                 DonHangOfflineHoanThanhFragment donOnline = new DonHangOfflineHoanThanhFragment();
                 return donOnline;
-            case 3:
-                DonHangOnlineDangChoSuLiFragment tableFragment4 = new DonHangOnlineDangChoSuLiFragment();
-                return tableFragment4;
-            case 4:
-                DonHangOnlineDangDangSuLiFragment tableFragment5 = new DonHangOnlineDangDangSuLiFragment();
-                return tableFragment5;
-            case 5:
-                DonHangOnlineDangHoanThanhFragment tableFragment6 = new DonHangOnlineDangHoanThanhFragment();
-                return tableFragment6;
             default:
                 return null;
         }

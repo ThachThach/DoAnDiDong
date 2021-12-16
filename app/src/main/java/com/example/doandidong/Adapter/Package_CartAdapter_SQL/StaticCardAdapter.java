@@ -12,11 +12,12 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.doandidong.ChucNang.CardProductSQL.CardProduct;
 import com.squareup.picasso.Picasso;
 
 import com.example.doandidong.Data.Product;
 import com.example.doandidong.R;
-import com.example.doandidong.ChucNang.CardProductSQL.CardProduct;
+
 import java.util.ArrayList;
 
 public class StaticCardAdapter extends RecyclerView.Adapter<StaticCardAdapter.StaticRvCardHolder>{

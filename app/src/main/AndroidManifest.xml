@@ -16,6 +16,14 @@
             </intent-filter>
         </activity>
 
+
+        <activity android:name=".ChucNang.MonOrder"
+            android:exported="true"/>
+
+        <activity android:name=".ChucNang.ChiTietOrder.ChiTietSanPham"
+            android:exported="true"
+            />
+
         <activity
             android:name=".ChucNang.LichSuHoatDongActivity"
             android:exported="true"
@@ -83,15 +91,6 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity
-            android:name=".ChucNang.CardProductSQL.CardProduct"
-            android:exported="true" />
-        <activity
-            android:name=".ChucNang.ChiTietOrder.ChiTietSanPham"
-            android:exported="true" />
-        <activity
-            android:name=".ChucNang.MonOrder"
-            android:exported="true" />
         <activity android:name=".ChucNang.Manager" />
         <activity android:name=".ChucNang.Income" />
         <activity android:name=".ChucNang.Processing" />

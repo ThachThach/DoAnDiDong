@@ -3,8 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/order"
-        android:icon="@drawable/icons8card"
-        android:title="Menu 1"
-        app:showAsAction="ifRoom" />
-
+        android:title="order thêm"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/bacham"
+        android:title="Chọn khuyến mãi"
+        android:orderInCategory="200"
+        android:visible="false"
+        app:showAsAction="withText"
+        />
 </menu>

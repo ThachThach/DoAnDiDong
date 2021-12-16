@@ -20,7 +20,7 @@ import com.example.doandidong.R;
 import java.util.ArrayList;
 
 public class StaticRvKhuVucAdapter  extends RecyclerView.Adapter<StaticRvKhuVucAdapter.StaticRvViewHolder>{
-//    Context context;
+    //    Context context;
     ArrayList<StaticModelKhuVuc> items;
     int item_a =-1;
     Interface_KhuVuc_ban interfacekhuVucban;
@@ -84,10 +84,10 @@ public class StaticRvKhuVucAdapter  extends RecyclerView.Adapter<StaticRvKhuVucA
 
                         interfacekhuVucban.GetBack(position,items.get(position).getStaticBanModels(),items.get(i).getId_khuvuc(), items.get(position).getTrangthai());
 
-                                    }
-                              }
-                        }
-                    });
+                    }
+                }
+            }
+        });
 
 //        Log.d("khungaa",items.get(position).getStaticBanModels().get(1).getTrangthai());
 //        if(items.get(position).getStaticBanModels().get(0).getTrangthai().equals("aaa")){

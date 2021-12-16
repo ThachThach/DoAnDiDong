@@ -20,7 +20,7 @@
             android:layout_marginLeft="20dp"
             android:layout_gravity="center"
             android:textSize="20sp"
-            android:textColor="@color/link"
+            android:textColor="@color/verypari"
             android:textStyle="bold"/>
 
         <ImageView
@@ -62,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="@color/link"
+            android:textColor="@color/verypari"
             android:fontFamily="@font/alike_angular"
             android:text="Báo cáo chỉ số kinh doanh"/>
 
@@ -92,7 +92,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="@color/link"
+            android:textColor="@color/verypari"
             android:fontFamily="@font/alike_angular"
             android:text="Báo cáo sản phẩm bán chạy"/>
     </LinearLayout>
@@ -100,62 +100,9 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/black1" />
-    <LinearLayout
-        android:id="@+id/viewHoaDon"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="15dp"
-        android:background="?android:attr/selectableItemBackground"
-        android:clickable="true"
-        android:focusable="true">
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/baocao_hoadon"
-            android:layout_gravity="center"/>
-
-        <TextView
-            android:id="@+id/lblHoaDon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
-            android:textColor="@color/link"
-            android:fontFamily="@font/alike_angular"
-            android:text="Báo cáo hóa đơn" />
-
-    </LinearLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/black1" />
-    <LinearLayout
-        android:id="@+id/viewKho"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="15dp"
-        android:background="?android:attr/selectableItemBackground"
-        android:clickable="true"
-        android:focusable="true">
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/baocao_kho"
-            android:layout_gravity="center"/>
-        <TextView
-            android:id="@+id/lblKho"
-            android:layout_marginLeft="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textColor="@color/link"
-            android:fontFamily="@font/alike_angular"
-            android:text="Báo cáo kho"/>
-
-    </LinearLayout>
 
 </LinearLayout>

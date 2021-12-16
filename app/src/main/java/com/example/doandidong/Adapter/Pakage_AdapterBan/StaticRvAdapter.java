@@ -146,7 +146,7 @@ public class StaticRvAdapter extends RecyclerView.Adapter<StaticRvAdapter.Static
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_ban, parent, false);
         ThongTinCuaHangSql thongTinCuaHangSql = new ThongTinCuaHangSql(orderMenu);
         id_CuaHang = "CuaHangOder/" + thongTinCuaHangSql.IDCuaHang();
-         tennhanvien = thongTinCuaHangSql.selectUser().getUsername();
+        tennhanvien = thongTinCuaHangSql.selectUser().getUsername();
         StaticRvHolderBan staticRvHolderBan = new StaticRvHolderBan(view);
         getDatasql();
         return staticRvHolderBan;
@@ -160,45 +160,43 @@ public class StaticRvAdapter extends RecyclerView.Adapter<StaticRvAdapter.Static
         holder.tenBan.setText(CrrItem.getTenban());
         //ban hu
 
-            if (staticBanModels.get(position).getTrangthai().equals("3")) {
-                holder.cardview_ban.setBackgroundResource(R.color.red);
-                holder.constraintLayout.setEnabled(false);
+        if (staticBanModels.get(position).getTrangthai().equals("3")) {
+            holder.cardview_ban.setBackgroundResource(R.color.red);
+            holder.constraintLayout.setEnabled(false);
+
+        }
+        //da order nhung chua co mon
+        if (staticBanModels.get(position).getTrangthai().equals("2")) {
+            holder.cardview_ban.setBackgroundResource(R.color.link);
+
+
+        }
+        //da dat ban
+        if (staticBanModels.get(position).getTrangthai().equals("4")) {
+            holder.cardview_ban.setBackgroundResource(R.color.Java);
+
+
+        }
+        //da order cho lay
+        if (staticBanModels.get(position).getTrangthai().equals("5")) {
+            holder.cardview_ban.setBackgroundResource(R.color.brown_soc);
+
+
+        }
+        //dang an
+        if (staticBanModels.get(position).getTrangthai().equals("6")) {
+            holder.cardview_ban.setBackgroundResource(R.color.so_hoa_don);
+        }
+
+        holder.constraintLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(orderMenu,"ban",Toast.LENGTH_LONG).show();
+                getData(CrrItem);
+
 
             }
-            //da order nhung chua co mon
-            if (staticBanModels.get(position).getTrangthai().equals("2")) {
-                holder.cardview_ban.setBackgroundResource(R.color.maudat);
-
-
-            }
-            //da dat ban
-            if (staticBanModels.get(position).getTrangthai().equals("4")) {
-                holder.cardview_ban.setBackgroundResource(R.color.bac);
-
-
-            }
-            //da order cho lay
-            if (staticBanModels.get(position).getTrangthai().equals("5")) {
-                holder.cardview_ban.setBackgroundResource(R.color.xanh);
-
-
-            }
-            //dang an
-            if (staticBanModels.get(position).getTrangthai().equals("6")) {
-                holder.cardview_ban.setBackgroundResource(R.color.purple_200);
-
-
-            }
-
-            holder.constraintLayout.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Toast.makeText(orderMenu,"ban",Toast.LENGTH_LONG).show();
-                    getData(CrrItem);
-
-
-                }
-            });
+        });
 
 //        }else {
 ////            holder.cardview_ban.setBackgroundResource(R.color.red);
@@ -246,17 +244,17 @@ public class StaticRvAdapter extends RecyclerView.Adapter<StaticRvAdapter.Static
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-                    if (snapshot.getValue() != null) {
-                        Intent intent = new Intent(orderMenu, ThanhToanActivity.class);
-                        intent.putExtra("id_ban", CrrItem.getID());
-                        intent.putExtra("id_khuvuc", Id_khuvuc);
-                        orderMenu.startActivity(intent);
-                    } else {
-                        Intent intent = new Intent(orderMenu, MonOrder.class);
-                        intent.putExtra("id_ban", CrrItem.getID());
-                        intent.putExtra("id_khuvuc", Id_khuvuc);
-                        orderMenu.startActivity(intent);
-                    }
+                if (snapshot.getValue() != null) {
+                    Intent intent = new Intent(orderMenu, ThanhToanActivity.class);
+                    intent.putExtra("id_ban", CrrItem.getID());
+                    intent.putExtra("id_khuvuc", Id_khuvuc);
+                    orderMenu.startActivity(intent);
+                } else {
+                    Intent intent = new Intent(orderMenu, MonOrder.class);
+                    intent.putExtra("id_ban", CrrItem.getID());
+                    intent.putExtra("id_khuvuc", Id_khuvuc);
+                    orderMenu.startActivity(intent);
+                }
             }
 
             @Override

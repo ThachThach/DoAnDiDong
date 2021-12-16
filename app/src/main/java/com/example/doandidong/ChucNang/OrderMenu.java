@@ -240,8 +240,8 @@ public class OrderMenu extends AppCompatActivity implements Interface_KhuVuc_ban
                             }
                             String gioDaorder = aaa.child("gioDaOder").getValue() + "";
                             String id_ban = aaa.getKey();
-                                progressBar.setVisibility(View.VISIBLE);
-                                mm.add(new StaticBanModel(id_ban, tenban, trangthai1, tennhanvien, gioDaorder));
+                            progressBar.setVisibility(View.VISIBLE);
+                            mm.add(new StaticBanModel(id_ban, tenban, trangthai1, tennhanvien, gioDaorder));
                         }
 
                         StaticModelKhuVuc product = new StaticModelKhuVuc(tenkhuvuc, trangthai, id_khuvuc, mm);
@@ -269,6 +269,6 @@ public class OrderMenu extends AppCompatActivity implements Interface_KhuVuc_ban
 
     public void tieude(ActionBar actionBar) {
 
-                actionBar.setTitle("Danh sách Bàn");
+        actionBar.setTitle("Danh sách Bàn");
     }
 }
